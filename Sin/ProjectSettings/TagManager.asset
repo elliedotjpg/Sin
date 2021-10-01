@@ -41,11 +41,8 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: BLACK BG
-    uniqueID: 1909551077
-    locked: 0
-  - name: MAIN BG
-    uniqueID: 3776403117
+  - name: BlackBg
+    uniqueID: 1178257709
     locked: 0
   - name: Floor
     uniqueID: 1768407955
