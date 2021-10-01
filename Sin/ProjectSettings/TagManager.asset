@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - SinTitle
   - 
   - 
   - 
@@ -46,4 +46,10 @@ TagManager:
     locked: 0
   - name: Furniture
     uniqueID: 3162438303
+    locked: 0
+  - name: SinTitle
+    uniqueID: 2744011057
+    locked: 0
+  - name: StartButton
+    uniqueID: 4011490837
     locked: 0
