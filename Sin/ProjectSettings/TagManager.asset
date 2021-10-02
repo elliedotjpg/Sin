@@ -65,6 +65,9 @@ TagManager:
   - name: Player
     uniqueID: 3275410967
     locked: 0
+  - name: Furniture (can overlap player)
+    uniqueID: 246869241
+    locked: 0
   - name: TSBlackFadeOut
     uniqueID: 332421083
     locked: 0
