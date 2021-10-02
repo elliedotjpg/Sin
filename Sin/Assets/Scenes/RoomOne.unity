@@ -410,7 +410,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementSpeed: 2
-  Score: 0
+  rb: {fileID: 140964899}
+  _animator: {fileID: 140964903}
 --- !u!95 &140964903
 Animator:
   serializedVersion: 3
