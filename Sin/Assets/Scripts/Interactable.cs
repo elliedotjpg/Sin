@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Interactable : MonoBehaviour
 {
 
     public bool isInRange;
     public KeyCode interactKey;
-    public UnityEvent interactAction;
+
+    //public UnityEvent interactAction;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,28 @@ public class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(isInRange)
+        {
+            if(Input.GetKeyDown(interactKey))
+            {
+                Debug.Log("Interact key works.");
+                SceneManager.LoadScene(2);
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            isInRange = true;
+            Debug.Log("Player is in range!");
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        isInRange = false;
+        Debug.Log("Player is no longer in range!");
     }
 }
