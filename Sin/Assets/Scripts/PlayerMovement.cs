@@ -32,7 +32,8 @@ public class PlayerMovement : MonoBehaviour
             _rigidbody.velocity = new Vector2(0, 0);
         }
         _animator.SetFloat("WalkHorizontal", Mathf.Abs(_rigidbody.velocity.x));
-        _animator.SetFloat("WalkVerticalDown", Mathf.Abs(_rigidbody.velocity.y));
+        _animator.SetFloat("WalkVerticalUp", Mathf.Abs(_rigidbody.velocity.y));
+        //_animator.SetFloat("WalkVerticalDown", Mathf.Abs(_rigidbody.velocity.y));
         Debug.Log(_rigidbody.velocity);
     }
 
@@ -40,10 +41,11 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.parent = null;
 
+
         // Down
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))   
         {
-            SetMovement(-MovementSpeed, -Mathf.Abs(transform.localScale.x));
+            SetMovement(-MovementSpeed, Mathf.Abs(transform.localScale.x));
         }
 
         // Up
@@ -51,10 +53,13 @@ public class PlayerMovement : MonoBehaviour
         {
             SetMovement(MovementSpeed, Mathf.Abs(transform.localScale.x));
         }
+
         else
         {
             _rigidbody.velocity = new Vector2(0, _rigidbody.velocity.y);
+
         }
+
 
         // Right
         if (Input.GetKey(KeyCode.D))
