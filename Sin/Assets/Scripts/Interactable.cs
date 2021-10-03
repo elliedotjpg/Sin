@@ -8,6 +8,10 @@ public class Interactable : MonoBehaviour
 {
 
     public bool isInRange;
+
+    //public GameObject Panel;
+    public RectTransform Panel;
+
     public KeyCode interactKey;
 
     //public UnityEvent interactAction;
@@ -15,19 +19,20 @@ public class Interactable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isInRange)
+        if (isInRange)
         {
-            if(Input.GetKeyDown(interactKey))
+            if (Input.GetKeyDown(interactKey))
             {
+                Panel.localScale = new Vector3(0.0092f, 0.0092f, 0.0092f);
                 Debug.Log("Interact key works.");
-                SceneManager.LoadScene(2);
             }
+            else { Panel.localScale = new Vector3(0, 0); }
         }
     }
 
