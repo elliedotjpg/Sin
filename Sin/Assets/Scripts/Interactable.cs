@@ -9,12 +9,9 @@ public class Interactable : MonoBehaviour
 
     public bool isInRange;
 
-    //public GameObject Panel;
-    public RectTransform Panel;
+    public GameObject Panel;
 
     public KeyCode interactKey;
-
-    //public UnityEvent interactAction;
 
     // Start is called before the first frame update
     void Start()
@@ -29,10 +26,12 @@ public class Interactable : MonoBehaviour
         {
             if (Input.GetKeyDown(interactKey))
             {
-                Panel.localScale = new Vector3(0.0092f, 0.0092f, 0.0092f);
-                Debug.Log("Interact key works.");
+                if (Panel != null)
+                {
+                    bool isActive = Panel.activeSelf;
+                    Panel.SetActive(!isActive);
+                }
             }
-            else { Panel.localScale = new Vector3(0, 0); }
         }
     }
 
