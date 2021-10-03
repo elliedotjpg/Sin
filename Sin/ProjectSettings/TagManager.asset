@@ -68,12 +68,18 @@ TagManager:
   - name: Furniture (can overlap player)
     uniqueID: 246869241
     locked: 0
+  - name: Extra Buttons
+    uniqueID: 2760278589
+    locked: 0
+  - name: TRANSPARENT BLACK BEHIND OVERLAY
+    uniqueID: 913189641
+    locked: 0
   - name: Overlay Window
     uniqueID: 1070730389
     locked: 0
   - name: TSBlackFadeOut
     uniqueID: 332421083
     locked: 0
-  - name: Buttons
+  - name: Inventory
     uniqueID: 3755233339
     locked: 0
