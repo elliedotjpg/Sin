@@ -11,7 +11,6 @@ public class addToInventory : MonoBehaviour
     public void OnClickObject()
     {
         AddItem();
-        //Destroy(this.gameObject);
         gameObject.SetActive(false);
     }
     void AddItem()
