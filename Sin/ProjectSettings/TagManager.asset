@@ -83,3 +83,6 @@ TagManager:
   - name: Inventory
     uniqueID: 3755233339
     locked: 0
+  - name: Item Overlay
+    uniqueID: 1733439741
+    locked: 0
