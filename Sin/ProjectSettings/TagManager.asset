@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -67,6 +68,9 @@ TagManager:
     locked: 0
   - name: YoungerMuni
     uniqueID: 2662993685
+    locked: 0
+  - name: Mother
+    uniqueID: 1394174931
     locked: 0
   - name: Furniture (can overlap player)
     uniqueID: 246869241
