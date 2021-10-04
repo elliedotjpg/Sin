@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Interactable : MonoBehaviour
 {
 
     public bool isInRange;
-
     public GameObject Panel;
-
     public KeyCode interactKey;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +22,9 @@ public class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CompareTag("Interactable") == isInRange)
+        if (isInRange)
         {
+
             if (Input.GetKeyDown(interactKey))
             {
                 if (Panel  != null)

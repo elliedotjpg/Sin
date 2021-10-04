@@ -13,8 +13,6 @@ public class InventorySlot : MonoBehaviour
     [SerializeField] private Image itemImage;
 
     [Header("Item Variables")]
-    //public Sprite itemSprite;
-    //public int numberHeld;
     public InventoryItem thisItem;
     public InventoryManager thisManager;
 
