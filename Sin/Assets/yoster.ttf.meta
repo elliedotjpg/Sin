@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e11d8341585c062498fa7d1b21ad499a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Yoster Island
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8971cc73b42eb494c9098e2d28560c17, type: 3}
+  - {fileID: 12800000, guid: 511082566b42afc44ad64de1e51c69cb, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
