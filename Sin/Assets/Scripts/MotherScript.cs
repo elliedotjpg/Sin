@@ -8,27 +8,23 @@ public class MotherScript : MonoBehaviour
     //[SerializeField] private PlayerInventory playerInventory;
     public GameObject itemToDrop;
     private Transform Epos;
-    // Start is called before the first frame update
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        itemToDrop.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("DropKeyCollider"))
+        if (collision.gameObject.name == "Mother")
         {
-            Instantiate(itemToDrop, Epos.position, Quaternion.identity);
+            itemToDrop.SetActive(true);
+            Instantiate(itemToDrop, transform.position, transform.rotation);
             Debug.Log("Collided with " + collision.gameObject.name);
             Debug.Log("Key dropped.");
             
             //Debug.Log("Key dropped.");
         }
+
     }
 }
