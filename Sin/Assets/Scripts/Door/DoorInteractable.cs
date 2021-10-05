@@ -2,36 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement;
-using TMPro;
 
-public class Interactable : MonoBehaviour
+public class DoorInteractable : MonoBehaviour
 {
+    [SerializeField] private PlayerInventory playerInventory;
+    [SerializeField] private InventoryItem thisItem;
 
-    public bool isInRange;
-    public GameObject Panel;
     public KeyCode interactKey;
+    public bool isInRange;
+    public UnityEvent interactAction;
 
-    // Start is called before the first frame update
-    void Start()
+    public bool isOpen;
+
+    private void Start()
     {
-
+        
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (isInRange)
         {
-
             if (Input.GetKeyDown(interactKey))
             {
-                if (Panel  != null)
+                if (playerInventory.myInventory.Contains(thisItem))
                 {
-                    bool isActive = Panel.activeSelf;
-                    Panel.SetActive(!isActive);
+                    interactAction.Invoke();
                 }
             }
+        }
+        else
+        {
+
         }
     }
 
@@ -40,13 +41,12 @@ public class Interactable : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = true;
-            Debug.Log("Player is in range!");
+            print("Player is in range with door!");
         }
     }
-
     private void OnTriggerExit2D(Collider2D collision)
     {
         isInRange = false;
-        Debug.Log("Player is no longer in range!");
+        print("Player is no longer in range with door!");
     }
 }
