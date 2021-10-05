@@ -11,12 +11,12 @@ public class InventoryItem : ScriptableObject
     public int numberHeld;
     public bool usable;
     public bool unique;
-    public UnityEvent thisEvent;
+    //public UnityEvent thisEvent;
 
-    public void Use()
+    /**public void Use()
     {
         thisEvent.Invoke();
-    }
+    } 
 
     public void DecreaseAmount()
     {
@@ -25,7 +25,7 @@ public class InventoryItem : ScriptableObject
         {
             numberHeld = 0;
         }
-    }
+    }*/
 
 
 }

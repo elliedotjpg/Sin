@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("DoorCollider"))
         {
-            Debug.Log("Collided with " + collision.gameObject);
+            Debug.Log("Collided with " + collision.gameObject.name);
             //SceneManager.LoadScene(0);
         }
     }

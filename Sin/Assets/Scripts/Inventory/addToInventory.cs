@@ -13,6 +13,13 @@ public class addToInventory : MonoBehaviour
         AddItem();
         gameObject.SetActive(false);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        AddItem();
+        gameObject.SetActive(false);
+    }
+
     void AddItem()
     {
         if(playerInventory && thisItem)

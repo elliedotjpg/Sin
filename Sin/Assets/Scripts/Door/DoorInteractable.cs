@@ -12,8 +12,6 @@ public class DoorInteractable : MonoBehaviour
     public bool isInRange;
     public UnityEvent interactAction;
 
-    public bool isOpen;
-
     private void Start()
     {
         
@@ -29,10 +27,6 @@ public class DoorInteractable : MonoBehaviour
                     interactAction.Invoke();
                 }
             }
-        }
-        else
-        {
-
         }
     }
 

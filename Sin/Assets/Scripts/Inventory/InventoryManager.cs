@@ -24,6 +24,7 @@ public class InventoryManager : MonoBehaviour
                 temp.transform.localScale = new Vector3(1.18f, 1.66f, 1f);
                 InventorySlot newSlot = temp.GetComponent<InventorySlot>();
                 Debug.Log("help");
+
                 if (newSlot)
                 {
                     newSlot.Setup(playerInventory.myInventory[i], this);
@@ -34,14 +35,23 @@ public class InventoryManager : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
+        ClearInventorySlots();
         MakeInventorySlots();
+        Debug.Log("Made inventory!");
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    void ClearInventorySlots()
+    {
+        for(int i =0; i < inventoryPanel.transform.childCount; i++)
+        {
+            Destroy(inventoryPanel.transform.GetChild(i).gameObject);
+        }
     }
 }
