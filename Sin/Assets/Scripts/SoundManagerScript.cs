@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip MainRoom;
-    
+
+    public static AudioClip objectGetSound;
     static AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
-        MainRoom = Resources.Load<AudioClip>("Muni");
-
-        audioSource = GetComponent<AudioSource> ();
+        objectGetSound = Resources.Load<AudioClip>("Obtained");
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,10 +22,13 @@ public class SoundManagerScript : MonoBehaviour
     }
     public static void PlaySound(string clip)
     {
+        Debug.Log(audioSource == null);
+
         switch (clip)
         {
-            case "Muni":
-                audioSource.PlayDelayed(5);
+            case "Obtained":
+                audioSource.PlayOneShot(objectGetSound);
+                Debug.Log("play obtained !!!!!!!!!!!!");
                 break;
         }
     }

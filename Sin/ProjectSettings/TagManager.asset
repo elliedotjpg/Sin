@@ -92,6 +92,9 @@ TagManager:
   - name: TSBlackFadeOut
     uniqueID: 332421083
     locked: 0
+  - name: ClickOutsideBook
+    uniqueID: 3898051737
+    locked: 0
   - name: Inventory
     uniqueID: 3755233339
     locked: 0

@@ -9,7 +9,10 @@ public class addToInventory : MonoBehaviour
 
     public void OnClickObject()
     {
+        
         AddItem();
+        SoundManagerScript.PlaySound("Obtained");
+
         gameObject.SetActive(false);
     }
 
@@ -17,7 +20,10 @@ public class addToInventory : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            AddItem();
+            SoundManagerScript.PlaySound("Obtained");
+            Debug.Log("Play sound now tsk.");
+
+            AddItem(); 
             gameObject.SetActive(false);
         }
     }
