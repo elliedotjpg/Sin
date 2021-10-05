@@ -8,6 +8,7 @@ public class PauseManager : MonoBehaviour
 {
     public GameObject inventoryPanel;
     public GameObject pausePanel;
+
     public Image hideLayer;
     public string mainMenu;
     public bool usingPausePanel;

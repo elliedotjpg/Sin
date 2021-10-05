@@ -14,6 +14,7 @@ public class animateMother : MonoBehaviour
 
     void Update()
     {
+
         if (playerInventory.myInventory.Contains(thisItem) && !loadedPrefab)
         {
             motherObject.SetActive(true);
@@ -25,5 +26,6 @@ public class animateMother : MonoBehaviour
             motherObject.SetActive(false);
         }
     }
+
 
 }
