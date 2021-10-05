@@ -15,5 +15,8 @@ MonoBehaviour:
   itemName: Key
   itemImage: {fileID: 21300000, guid: 736cce598eb79554aad3a443bcb0d0cf, type: 3}
   numberHeld: 1
-  usable: 0
+  usable: 1
   unique: 1
+  thisEvent:
+    m_PersistentCalls:
+      m_Calls: []
