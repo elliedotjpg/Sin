@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class PauseManager : MonoBehaviour
 {
-    private bool isPaused;
     public GameObject inventoryPanel;
     public GameObject pausePanel;
     public Image hideLayer;
@@ -16,7 +15,6 @@ public class PauseManager : MonoBehaviour
 
     void Start()
     {
-        isPaused = false;
         pausePanel.SetActive(false);
         inventoryPanel.SetActive(false);
         usingPausePanel = false;
@@ -54,7 +52,7 @@ public class PauseManager : MonoBehaviour
         } 
     }
 
-    /*public void ChangePause()
+    /**public void ChangePause()
     {
         isPaused = !isPaused;
         if (isPaused)
