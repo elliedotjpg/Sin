@@ -27,4 +27,22 @@ public class InventorySlot : MonoBehaviour
             itemNumberText.text = "" + thisItem.numberHeld;
         }
     }
+
+    private void Start()
+    {
+        
+    }
+
+    private void Update()
+    {
+        
+    }
+
+    public void ClickedOn()
+    {
+        if (thisItem)
+        {
+            thisManager.SetupDescription(thisItem.itemDescription);
+        }
+    }
 }

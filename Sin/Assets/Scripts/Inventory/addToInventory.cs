@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class addToInventory : MonoBehaviour
 {
@@ -14,10 +13,13 @@ public class addToInventory : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        AddItem();
-        gameObject.SetActive(false);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            AddItem();
+            gameObject.SetActive(false);
+        }
     }
 
     void AddItem()

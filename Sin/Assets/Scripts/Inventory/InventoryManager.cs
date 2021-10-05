@@ -6,10 +6,16 @@ using TMPro;
 public class InventoryManager : MonoBehaviour
 {
     [Header("Inventory Information")]
+
     public PlayerInventory playerInventory;
     [SerializeField] private GameObject blankInventorySlot;
     [SerializeField] private GameObject inventoryPanel;
-    //[SerializeField] private TextMeshProUGUI descriptionText;
+    [SerializeField] private TextMeshProUGUI itemDescription;
+
+    public void SetText(string description)
+    {
+        itemDescription.text = description;
+    }
 
     void MakeInventorySlots()
     {
@@ -42,6 +48,11 @@ public class InventoryManager : MonoBehaviour
         Debug.Log("Made inventory!");
     }
 
+    private void Start()
+    {
+        SetText("");
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -53,5 +64,11 @@ public class InventoryManager : MonoBehaviour
         {
             Destroy(inventoryPanel.transform.GetChild(i).gameObject);
         }
+    }
+
+    public void SetupDescription(string newDescriptionString)
+    {
+        itemDescription.text = newDescriptionString;
+        //useButton.SetActive(isButtonUsable);
     }
 }
