@@ -5,6 +5,8 @@ using UnityEngine;
 public class PanelOpener : MonoBehaviour
 {
 
+    public GameObject motherAnim;
+
     public GameObject Panel;
 
     public void OpenPanel()
@@ -19,6 +21,18 @@ public class PanelOpener : MonoBehaviour
     public void ClosePanel()
     {
             Panel.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (motherAnim.activeInHierarchy == true)
+        {
+            Panel.SetActive(false);
+        }
+        else
+        {
+            Panel.SetActive(true);
+        }
     }
 
 }

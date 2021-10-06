@@ -258,6 +258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 0}
+  thisItem: {fileID: 0}
   Panel: {fileID: 877534572}
 --- !u!114 &75474867
 MonoBehaviour:
@@ -882,8 +884,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.18288413}
-  m_Size: {x: 1.6171992, y: 4.015008}
+  m_Offset: {x: 0, y: -1.0401093}
+  m_Size: {x: 1.6171992, y: 2.3005574}
   m_Direction: 0
 --- !u!1 &219388510
 GameObject:
@@ -1163,6 +1165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 0}
+  thisItem: {fileID: 0}
   Panel: {fileID: 651254926}
 --- !u!114 &229068023
 MonoBehaviour:
@@ -1418,6 +1422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 0}
+  thisItem: {fileID: 0}
   Panel: {fileID: 1142513247}
 --- !u!114 &276729586
 MonoBehaviour:
@@ -2178,6 +2184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 0}
+  thisItem: {fileID: 0}
   Panel: {fileID: 905249321}
 --- !u!1 &356361635
 GameObject:
@@ -2816,6 +2824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 0}
+  thisItem: {fileID: 0}
   Panel: {fileID: 1266509232}
 --- !u!114 &494597956
 MonoBehaviour:
@@ -3151,6 +3161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 0}
+  thisItem: {fileID: 0}
   Panel: {fileID: 1266509232}
 --- !u!114 &561815396
 MonoBehaviour:
@@ -3926,6 +3938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 0}
+  thisItem: {fileID: 0}
   Panel: {fileID: 1266509232}
 --- !u!114 &926859725
 MonoBehaviour:
@@ -4184,6 +4198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 11400000, guid: a15a8ac0d8ca6d2469223aede1bcfcac, type: 2}
+  thisItem: {fileID: 11400000, guid: ee758ef6e40717541aa911a8bf547b8b, type: 2}
   Panel: {fileID: 2081752094}
 --- !u!82 &930249122
 AudioSource:
@@ -4583,6 +4599,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 0}
+  thisItem: {fileID: 0}
   Panel: {fileID: 877534572}
 --- !u!114 &1016302269
 MonoBehaviour:
@@ -5524,6 +5542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 0}
+  thisItem: {fileID: 0}
   Panel: {fileID: 2081752094}
 --- !u!114 &1291972246
 MonoBehaviour:
@@ -5880,6 +5900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 0}
+  thisItem: {fileID: 0}
   Panel: {fileID: 1266509232}
 --- !u!114 &1359433483
 MonoBehaviour:
@@ -6245,6 +6267,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 0}
+  thisItem: {fileID: 0}
   Panel: {fileID: 1142513247}
 --- !u!114 &1463544036
 MonoBehaviour:
@@ -6631,9 +6655,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1602831408}
   - component: {fileID: 1602831410}
-  - component: {fileID: 1602831409}
-  - component: {fileID: 1602831411}
   - component: {fileID: 1602831412}
+  - component: {fileID: 1602831409}
   m_Layer: 0
   m_Name: plantOne
   m_TagString: Untagged
@@ -6662,14 +6685,14 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602831407}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.33582807, y: -0.3602214}
-  m_Size: {x: 1.4589124, y: 1.4589124}
+  m_Offset: {x: 0.048846602, y: -0.6192571}
+  m_Size: {x: 0.8261478, y: 1.3398726}
   m_Direction: 0
 --- !u!212 &1602831410
 SpriteRenderer:
@@ -6723,32 +6746,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1602831411
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602831407}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.42665124, y: -0.546497}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.5, y: 2.5}
-    newSize: {x: 2.5, y: 2.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.6466975, y: 1.1769011}
-  m_EdgeRadius: 0
 --- !u!114 &1602831412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7014,7 +7011,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1810089891}
-  - component: {fileID: 1810089890}
   m_Layer: 0
   m_Name: KeyCollider
   m_TagString: DropKeyCollider
@@ -7022,22 +7018,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!70 &1810089890
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1810089888}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.085641004, y: -1.7235141}
-  m_Size: {x: 1.0138444, y: 0.45718008}
-  m_Direction: 1
 --- !u!4 &1810089891
 Transform:
   m_ObjectHideFlags: 0
@@ -8101,7 +8081,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3591760054945871960, guid: d6deec87c26cfba458411c695253e5cd, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3591760054945871963, guid: d6deec87c26cfba458411c695253e5cd, type: 3}
       propertyPath: m_Name
