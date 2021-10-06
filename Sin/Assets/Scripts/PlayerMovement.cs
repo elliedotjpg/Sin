@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
@@ -35,9 +36,9 @@ public class PlayerMovement : MonoBehaviour
         _animator.SetFloat("WalkVerticalUp", movement.y);
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * MovementSpeed * Time.fixedDeltaTime);
+        StartCoroutine(Wait());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -48,4 +49,11 @@ public class PlayerMovement : MonoBehaviour
             //SceneManager.LoadScene(0);
         }
     }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(22);
+        rb.MovePosition(rb.position + movement * MovementSpeed * Time.fixedDeltaTime);
+    }
+
 }

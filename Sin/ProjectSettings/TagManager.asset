@@ -89,9 +89,6 @@ TagManager:
   - name: Overlay Image
     uniqueID: 560825333
     locked: 0
-  - name: TSBlackFadeOut
-    uniqueID: 332421083
-    locked: 0
   - name: ClickOutsideBook
     uniqueID: 3898051737
     locked: 0
@@ -100,4 +97,7 @@ TagManager:
     locked: 0
   - name: Item Overlay
     uniqueID: 1733439741
+    locked: 0
+  - name: TSBlackFadeOut
+    uniqueID: 332421083
     locked: 0
