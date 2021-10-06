@@ -29,10 +29,8 @@ public class DoorController1 : MonoBehaviour
     {
         if (isOpen)
         {
-            //enterDoor.SetActive(true);
+            enterDoor.SetActive(true);
             doorCollider.enabled = false;
-
-            SceneManager.LoadScene(2);
 
         }
         else

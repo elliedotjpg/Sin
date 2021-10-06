@@ -1908,7 +1908,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -539733957
-  m_SortingLayer: 18
+  m_SortingLayer: 17
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 92d53e5bd6100c14ba98bfe977823ece, type: 3}
   m_Color: {r: 0.8354396, g: 0.84693044, b: 0.990566, a: 1}
@@ -2741,7 +2741,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -539733957
-  m_SortingLayer: 18
+  m_SortingLayer: 17
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c6120093d06ae5a42a412369d4adede9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3040,7 +3040,6 @@ GameObject:
   m_Component:
   - component: {fileID: 453455284}
   - component: {fileID: 453455286}
-  - component: {fileID: 453455285}
   m_Layer: 0
   m_Name: ExitRoom
   m_TagString: Untagged
@@ -3062,23 +3061,6 @@ Transform:
   m_Father: {fileID: 425419205}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &453455285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 453455283}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d1777810ffef5249bfa2915d99499cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enterDoor: {fileID: 0}
-  doorCollider: {fileID: 0}
-  isOpen: 0
-  animator: {fileID: 0}
-  Collider: {fileID: 453455283}
 --- !u!61 &453455286
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3843,7 +3825,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &682863742
 Transform:
   m_ObjectHideFlags: 0
@@ -4017,6 +3999,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712571010}
   m_CullTransparentMesh: 1
+--- !u!1 &820856419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3591760054945871963, guid: d6deec87c26cfba458411c695253e5cd, type: 3}
+  m_PrefabInstance: {fileID: 3591760054219627186}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &877534572
 GameObject:
   m_ObjectHideFlags: 0
@@ -5218,6 +5205,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016302266}
   m_CullTransparentMesh: 1
+--- !u!1 &1032555543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4690932316896101998, guid: 4d83da2aa85c14944a0b3a1edc76c63f, type: 3}
+  m_PrefabInstance: {fileID: 5861910568887169619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1039980350
 GameObject:
   m_ObjectHideFlags: 0
@@ -5545,7 +5537,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -539733957
-  m_SortingLayer: 18
+  m_SortingLayer: 17
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 92d53e5bd6100c14ba98bfe977823ece, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5558,53 +5550,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1111719707
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1111719708}
-  - component: {fileID: 1111719709}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1111719708
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111719707}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5861910568887169624}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &1111719709
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111719707}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.070494026, y: -0.93823934}
-  m_Size: {x: 1.5883191, y: 1.6634007}
-  m_Direction: 0
 --- !u!1 &1111922912
 GameObject:
   m_ObjectHideFlags: 0
@@ -7332,8 +7277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 11400000, guid: a15a8ac0d8ca6d2469223aede1bcfcac, type: 2}
   thisItem: {fileID: 11400000, guid: ee758ef6e40717541aa911a8bf547b8b, type: 2}
-  motherObject: {fileID: 0}
-  keyObject: {fileID: 0}
+  motherObject: {fileID: 1032555543}
+  keyObject: {fileID: 820856419}
 --- !u!4 &1528464365
 Transform:
   m_ObjectHideFlags: 0
@@ -9545,8 +9490,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d83da2aa85c14944a0b3a1edc76c63f, type: 3}
---- !u!4 &5861910568887169624 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8292635504775714638, guid: 4d83da2aa85c14944a0b3a1edc76c63f, type: 3}
-  m_PrefabInstance: {fileID: 5861910568887169619}
-  m_PrefabAsset: {fileID: 0}
