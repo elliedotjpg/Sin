@@ -258,8 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  thisItem: {fileID: 0}
+  motherAnim: {fileID: 0}
   Panel: {fileID: 877534572}
 --- !u!114 &75474867
 MonoBehaviour:
@@ -1165,8 +1164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  thisItem: {fileID: 0}
+  motherAnim: {fileID: 0}
   Panel: {fileID: 651254926}
 --- !u!114 &229068023
 MonoBehaviour:
@@ -1422,8 +1420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  thisItem: {fileID: 0}
+  motherAnim: {fileID: 0}
   Panel: {fileID: 1142513247}
 --- !u!114 &276729586
 MonoBehaviour:
@@ -1831,6 +1828,8 @@ GameObject:
   - component: {fileID: 314963791}
   - component: {fileID: 314963792}
   - component: {fileID: 314963793}
+  - component: {fileID: 314963794}
+  - component: {fileID: 314963795}
   m_Layer: 0
   m_Name: SideBookshelf (1)
   m_TagString: Untagged
@@ -1850,7 +1849,7 @@ Transform:
   m_LocalScale: {x: 1.4477, y: 1.4477, z: 1.4477}
   m_Children: []
   m_Father: {fileID: 425419205}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &314963792
 SpriteRenderer:
@@ -1929,6 +1928,50 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1.1606565, y: 1.7052245}
+  m_EdgeRadius: 0
+--- !u!114 &314963794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314963790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e5e0e42773d53439ffa23ead6dab38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 1524473927}
+  dialogText: {fileID: 219388512}
+  dialog: There's so many books. I wonder who owns them?
+  dialogActive: 0
+  interactKey: 102
+  playerInRange: 0
+--- !u!61 &314963795
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314963790}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.054287314, y: -0.11379889}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.5, y: 2.5}
+    newSize: {x: 2.5, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1881802, y: 1.7376266}
   m_EdgeRadius: 0
 --- !u!1 &341218335
 GameObject:
@@ -2184,8 +2227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  thisItem: {fileID: 0}
+  motherAnim: {fileID: 0}
   Panel: {fileID: 905249321}
 --- !u!1 &356361635
 GameObject:
@@ -2539,9 +2581,9 @@ Transform:
   - {fileID: 1841848575}
   - {fileID: 1494391069}
   - {fileID: 112038566}
-  - {fileID: 314963791}
   - {fileID: 1602831408}
   - {fileID: 1996416279}
+  - {fileID: 314963791}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2824,8 +2866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  thisItem: {fileID: 0}
+  motherAnim: {fileID: 0}
   Panel: {fileID: 1266509232}
 --- !u!114 &494597956
 MonoBehaviour:
@@ -3161,8 +3202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  thisItem: {fileID: 0}
+  motherAnim: {fileID: 0}
   Panel: {fileID: 1266509232}
 --- !u!114 &561815396
 MonoBehaviour:
@@ -3938,8 +3978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  thisItem: {fileID: 0}
+  motherAnim: {fileID: 0}
   Panel: {fileID: 1266509232}
 --- !u!114 &926859725
 MonoBehaviour:
@@ -4198,8 +4237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 11400000, guid: a15a8ac0d8ca6d2469223aede1bcfcac, type: 2}
-  thisItem: {fileID: 11400000, guid: ee758ef6e40717541aa911a8bf547b8b, type: 2}
+  motherAnim: {fileID: 0}
   Panel: {fileID: 2081752094}
 --- !u!82 &930249122
 AudioSource:
@@ -4599,8 +4637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  thisItem: {fileID: 0}
+  motherAnim: {fileID: 0}
   Panel: {fileID: 877534572}
 --- !u!114 &1016302269
 MonoBehaviour:
@@ -5542,8 +5579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  thisItem: {fileID: 0}
+  motherAnim: {fileID: 0}
   Panel: {fileID: 2081752094}
 --- !u!114 &1291972246
 MonoBehaviour:
@@ -5900,8 +5936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  thisItem: {fileID: 0}
+  motherAnim: {fileID: 0}
   Panel: {fileID: 1266509232}
 --- !u!114 &1359433483
 MonoBehaviour:
@@ -6267,8 +6302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e7c8ce6a80f6448d5340b57b4d585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  thisItem: {fileID: 0}
+  motherAnim: {fileID: 0}
   Panel: {fileID: 1142513247}
 --- !u!114 &1463544036
 MonoBehaviour:
@@ -6676,7 +6710,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 425419205}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &1602831409
 CapsuleCollider2D:
@@ -7454,7 +7488,7 @@ Transform:
   m_LocalScale: {x: 0.22936672, y: 0.22936672, z: 0.22936672}
   m_Children: []
   m_Father: {fileID: 425419205}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1996416280
 SpriteRenderer:
