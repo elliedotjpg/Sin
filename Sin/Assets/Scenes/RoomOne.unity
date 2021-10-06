@@ -6531,6 +6531,7 @@ MonoBehaviour:
   playerInventory: {fileID: 11400000, guid: a15a8ac0d8ca6d2469223aede1bcfcac, type: 2}
   thisItem: {fileID: 11400000, guid: ee758ef6e40717541aa911a8bf547b8b, type: 2}
   motherObject: {fileID: 5861910568887169620}
+  keyObject: {fileID: 927900393}
 --- !u!4 &1528464365
 Transform:
   m_ObjectHideFlags: 0
@@ -7014,7 +7015,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1810089891}
   - component: {fileID: 1810089890}
-  - component: {fileID: 1810089889}
   m_Layer: 0
   m_Name: KeyCollider
   m_TagString: DropKeyCollider
@@ -7022,19 +7022,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1810089889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1810089888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4394f412944be940a082a579ff30b4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemToDrop: {fileID: 927900393}
 --- !u!70 &1810089890
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -7872,7 +7859,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0028164387, y: -1.0223627}
+  m_Offset: {x: 0.0028164387, y: -0.8938885}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7883,7 +7870,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.365746, y: 5.202546}
+  m_Size: {x: 6.365746, y: 4.9455976}
   m_EdgeRadius: 0
 --- !u!1 &2081752094
 GameObject:
@@ -8112,6 +8099,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3591760054945871960, guid: d6deec87c26cfba458411c695253e5cd, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3591760054945871963, guid: d6deec87c26cfba458411c695253e5cd, type: 3}
       propertyPath: m_Name
       value: Key
@@ -8119,6 +8110,18 @@ PrefabInstance:
     - target: {fileID: 3591760054945871963, guid: d6deec87c26cfba458411c695253e5cd, type: 3}
       propertyPath: m_TagString
       value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591760054945871963, guid: d6deec87c26cfba458411c695253e5cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591760054945871966, guid: d6deec87c26cfba458411c695253e5cd, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591760054945871966, guid: d6deec87c26cfba458411c695253e5cd, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1132528993
       objectReference: {fileID: 0}
     - target: {fileID: 3591760054945871967, guid: d6deec87c26cfba458411c695253e5cd, type: 3}
       propertyPath: m_RootOrder

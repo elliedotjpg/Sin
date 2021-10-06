@@ -10,7 +10,12 @@ public class animateMother : MonoBehaviour
     private static bool loadedPrefab = false;
 
     public GameObject motherObject;
+    public GameObject keyObject;
 
+    void Start()
+    {
+        keyObject.SetActive(false);
+    }
 
     void Update()
     {
@@ -20,11 +25,18 @@ public class animateMother : MonoBehaviour
             motherObject.SetActive(true);
             loadedPrefab = true;
             Instantiate(motherObject, transform.position, transform.rotation);
+            StartCoroutine(DelayCoroutine());
         }
         else
         {
             motherObject.SetActive(false);
         }
+    }
+
+    private IEnumerator DelayCoroutine()
+    {
+        yield return new WaitForSeconds(3f);
+        keyObject.SetActive(true);
     }
 
 
