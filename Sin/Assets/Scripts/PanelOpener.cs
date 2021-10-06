@@ -29,10 +29,10 @@ public class PanelOpener : MonoBehaviour
         {
             Panel.SetActive(false);
         }
-        else
+        /**else
         {
             Panel.SetActive(true);
-        }
+        }*/
     }
 
 }

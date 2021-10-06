@@ -5,39 +5,43 @@ using UnityEngine.SceneManagement;
 
 public class DoorController1 : MonoBehaviour
 {
-    //public GameObject EnterDoor;
-
-    public new Collider2D collider;
+    public GameObject enterDoor;
+    public Collider2D doorCollider;
     public bool isOpen;
     public Animator animator;
 
     private void Start()
-    {    
-        collider = GetComponent<Collider2D>();
-        //EnterDoor.SetActive(false);;
+    {
+        enterDoor.SetActive(false);
     }
     public void OpenDoor()
     {
         if (!isOpen)
         {
             isOpen = true;
-            collider.enabled = true;
 
             UnityEngine.Debug.Log("Door unlocked!");
             animator.SetBool("isOpen", isOpen);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void UnlockDoor()
     {
-        //Debug.Log("Collider Enabled = " + GetComponent<Collider>().enabled);
-        if (isOpen == true)
+        if (isOpen)
         {
-            if (collision.gameObject.CompareTag("Player"))
-            {
-                SceneManager.LoadScene(2);
-            }
+            //enterDoor.SetActive(true);
+            doorCollider.enabled = false;
+
+            SceneManager.LoadScene(2);
+
+        }
+        else
+        {
+            enterDoor.SetActive(false);
+            doorCollider.enabled = true;
         }
     }
+
+   
 }
 

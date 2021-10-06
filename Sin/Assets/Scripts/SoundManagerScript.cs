@@ -22,13 +22,10 @@ public class SoundManagerScript : MonoBehaviour
     }
     public static void PlaySound(string clip)
     {
-        Debug.Log(audioSource == null);
-
         switch (clip)
         {
             case "Obtained":
                 audioSource.PlayOneShot(objectGetSound);
-                Debug.Log("play obtained !!!!!!!!!!!!");
                 break;
         }
     }

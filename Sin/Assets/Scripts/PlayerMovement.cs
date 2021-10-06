@@ -42,10 +42,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("DoorCollider"))
+        if (collision.gameObject.CompareTag("EnterDoor"))
         {
             Debug.Log("Collided with " + collision.gameObject.name);
-            //SceneManager.LoadScene(0);
         }
+        Debug.Log("Collided with " + collision.gameObject.name);
     }
 }
