@@ -3,6 +3,7 @@ public class GameManager
     public enum EnumGameState
     {
         Playing,
+        Freeze,
         GameOver
     }
 

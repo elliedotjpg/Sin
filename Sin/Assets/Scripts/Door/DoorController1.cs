@@ -5,23 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class DoorController1 : MonoBehaviour
 {
-    public GameObject EnterDoor;
+    //public GameObject EnterDoor;
 
-    //public new Collider2D collider;
+    public new Collider2D collider;
     public bool isOpen;
     public Animator animator;
 
     private void Start()
     {    
-        //collider = GetComponent<Collider2D>();
-        EnterDoor.SetActive(false);;
+        collider = GetComponent<Collider2D>();
+        //EnterDoor.SetActive(false);;
     }
     public void OpenDoor()
     {
         if (!isOpen)
         {
             isOpen = true;
-            EnterDoor.SetActive(true);
+            collider.enabled = true;
 
             UnityEngine.Debug.Log("Door unlocked!");
             animator.SetBool("isOpen", isOpen);
