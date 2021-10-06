@@ -7,6 +7,6 @@ public class backToMain : MonoBehaviour
 {
     public void OnClickbacktoMain()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("TitleScreen");
     }
 }

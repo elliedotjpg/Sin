@@ -3825,7 +3825,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000011920929, y: -0.43315518}
+  m_Offset: {x: -0.00000011920929, y: -0.216559}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3836,7 +3836,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3736975, y: 3.5988119}
+  m_Size: {x: 2.3736975, y: 3.1656194}
   m_EdgeRadius: 0
 --- !u!1 &712571010
 GameObject:
@@ -4016,9 +4016,9 @@ GameObject:
   - component: {fileID: 899245207}
   - component: {fileID: 899245208}
   - component: {fileID: 899245209}
-  - component: {fileID: 899245211}
   - component: {fileID: 899245210}
   - component: {fileID: 899245212}
+  - component: {fileID: 899245211}
   m_Layer: 0
   m_Name: LockedDoor
   m_TagString: Untagged
@@ -4144,7 +4144,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02845937, y: -2.4737332}
+  m_Offset: {x: 0.022799492, y: -1.0064594}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4155,7 +4155,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2625866, y: 0.49045038}
+  m_Size: {x: 2.8568401, y: 5.3713493}
   m_EdgeRadius: 0
 --- !u!114 &899245212
 MonoBehaviour:
@@ -4169,7 +4169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21695b2f112645144bbe4ba4a7c56b2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnterDoor: {fileID: 1240664000}
+  collider: {fileID: 0}
   isOpen: 0
   animator: {fileID: 899245209}
 --- !u!1 &905249321
@@ -5887,11 +5887,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1240664000 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1124039726264149953, guid: 52239c4af7d2a4a46988b271a685d195, type: 3}
-  m_PrefabInstance: {fileID: 1891201443}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1240664001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1124039726264149954, guid: 52239c4af7d2a4a46988b271a685d195, type: 3}
@@ -8239,6 +8234,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 899245207}
     m_Modifications:
+    - target: {fileID: 1124039726264149820, guid: 52239c4af7d2a4a46988b271a685d195, type: 3}
+      propertyPath: m_Size.y
+      value: 3.370866
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124039726264149820, guid: 52239c4af7d2a4a46988b271a685d195, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.269642
+      objectReference: {fileID: 0}
     - target: {fileID: 1124039726264149953, guid: 52239c4af7d2a4a46988b271a685d195, type: 3}
       propertyPath: m_Name
       value: EnterDoor
@@ -9296,6 +9299,10 @@ PrefabInstance:
       value: Key
       objectReference: {fileID: 0}
     - target: {fileID: 3591760054945871963, guid: d6deec87c26cfba458411c695253e5cd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591760054945871963, guid: d6deec87c26cfba458411c695253e5cd, type: 3}
       propertyPath: m_TagString
       value: Interactable
       objectReference: {fileID: 0}
@@ -9370,7 +9377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4690932316896101998, guid: 4d83da2aa85c14944a0b3a1edc76c63f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8292635504775714638, guid: 4d83da2aa85c14944a0b3a1edc76c63f, type: 3}
       propertyPath: m_RootOrder
