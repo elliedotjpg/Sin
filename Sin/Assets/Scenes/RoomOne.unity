@@ -6632,6 +6632,7 @@ GameObject:
   - component: {fileID: 1602831410}
   - component: {fileID: 1602831409}
   - component: {fileID: 1602831411}
+  - component: {fileID: 1602831412}
   m_Layer: 0
   m_Name: plantOne
   m_TagString: Untagged
@@ -6747,6 +6748,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6466975, y: 1.1769011}
   m_EdgeRadius: 0
+--- !u!114 &1602831412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602831407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e5e0e42773d53439ffa23ead6dab38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 2089698461}
+  dialogText: {fileID: 1042373275}
+  dialog: A potted plant. It seems to be new from how neat the pot is.
+  dialogActive: 0
+  interactKey: 102
+  playerInRange: 0
 --- !u!1 &1627531036
 GameObject:
   m_ObjectHideFlags: 0
