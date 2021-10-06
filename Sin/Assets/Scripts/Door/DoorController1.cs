@@ -32,7 +32,7 @@ public class DoorController1 : MonoBehaviour
             //enterDoor.SetActive(true);
             doorCollider.enabled = false;
 
-            SceneManager.LoadScene(2);
+            StartCoroutine(Wait());
 
         }
         else
@@ -40,6 +40,12 @@ public class DoorController1 : MonoBehaviour
             enterDoor.SetActive(false);
             doorCollider.enabled = true;
         }
+    }
+
+    private IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(2);
     }
 
    
