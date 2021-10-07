@@ -11,17 +11,17 @@ public class addToInventory : MonoBehaviour
     {
         
         AddItem();
-        SoundManagerScript.PlaySound("Obtained");
+        SoundManagerScript.PlaySound("itemGet");  
 
         gameObject.SetActive(false);
+        Debug.Log("Added item!");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SoundManagerScript.PlaySound("Obtained");
-            Debug.Log("Play sound now tsk.");
+            SoundManagerScript.PlaySound("itemGet");
 
             AddItem(); 
             gameObject.SetActive(false);

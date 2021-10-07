@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c50b24a65798db142b046507db0c08ab, type: 3}
   m_Name: DiaryEntry2
   m_EditorClassIdentifier: 
-  itemDescription: 
-  itemName: Diary Page
-  itemImage: {fileID: 21300000, guid: 6dce75fa5ec97b94cb19f6a2203e0650, type: 3}
-  numberHeld: 4
+  itemDescription: '"Diary, how do I make money? Mother is mad. She says that it
+    is taking too long, and that I should cough up the money. She hit me very hard
+    on the back, but nothing came out even though I coughed like 10000000000x!! She
+    also kicked my legs but I don''t know how money can come out from them. It hurt,
+    but Mother said only bad children cry."'
+  itemName: Diary Entry Two
+  itemImage: {fileID: 21300000, guid: be3fb417971667a4f85e9dafe09399e5, type: 3}
+  numberHeld: 0
   usable: 0
   unique: 1
