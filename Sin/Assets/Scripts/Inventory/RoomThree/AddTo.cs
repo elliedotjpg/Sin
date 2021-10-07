@@ -2,19 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class addToInventory : MonoBehaviour
+public class AddTo : MonoBehaviour
 {
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
 
     public void OnClickObject()
     {
-        
+        SoundManagerScript.PlaySound("itemGet");
         AddItem();
-        SoundManagerScript.PlaySound("itemGet");  
+        
 
         gameObject.SetActive(false);
-        Debug.Log("Added item!");
+       
+
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -23,16 +25,16 @@ public class addToInventory : MonoBehaviour
         {
             SoundManagerScript.PlaySound("itemGet");
 
-            AddItem(); 
+            AddItem();
             gameObject.SetActive(false);
         }
     }
 
     void AddItem()
     {
-        if(playerInventory && thisItem)
+        if (playerInventory && thisItem)
         {
-            if(playerInventory.myInventory.Contains(thisItem))
+            if (playerInventory.myInventory.Contains(thisItem))
             {
                 thisItem.numberHeld += 1;
             }
