@@ -17,7 +17,7 @@ MonoBehaviour:
     on the back, but nothing came out even though I coughed like 10000000000x!! She
     also kicked my legs but I don''t know how money can come out from them. It hurt,
     but Mother said only bad children cry."'
-  itemName: Diary Entry Two
+  itemName: Diary Entry 2
   itemImage: {fileID: 21300000, guid: be3fb417971667a4f85e9dafe09399e5, type: 3}
   numberHeld: 0
   usable: 0

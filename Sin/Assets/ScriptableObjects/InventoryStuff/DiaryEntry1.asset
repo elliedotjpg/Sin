@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DiaryEntry1
   m_EditorClassIdentifier: 
   itemDescription: 
-  itemName: 
+  itemName: Diary Entry 1
   itemImage: {fileID: 0}
   numberHeld: 0
   usable: 0
