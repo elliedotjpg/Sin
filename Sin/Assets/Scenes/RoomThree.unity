@@ -3595,6 +3595,7 @@ GameObject:
   - component: {fileID: 527440196}
   - component: {fileID: 527440198}
   - component: {fileID: 527440197}
+  - component: {fileID: 527440199}
   m_Layer: 0
   m_Name: InteractableChest
   m_TagString: Untagged
@@ -3687,6 +3688,24 @@ MonoBehaviour:
         m_CallState: 2
   interactKey: 102
   isInRange: 0
+--- !u!114 &527440199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527440194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e5e0e42773d53439ffa23ead6dab38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
+  dialog: Something so so precious must be in here for it to be locked!
+  dialogActive: 0
+  interactKey: 0
+  playerInRange: 0
 --- !u!1 &559619266
 GameObject:
   m_ObjectHideFlags: 0
@@ -8472,7 +8491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 0}
   dialogText: {fileID: 0}
-  dialog: I wonder where this leads to?
+  dialog: I can feel cool air...
   dialogActive: 0
   interactKey: 102
   playerInRange: 0
@@ -8489,7 +8508,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13016963, y: 0.24737728}
+  m_Offset: {x: -0.01712966, y: -1.1777091}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8500,7 +8519,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.318049, y: 6.086973}
+  m_Size: {x: 7.3982434, y: 8.937148}
   m_EdgeRadius: 0
 --- !u!212 &1231765387
 SpriteRenderer:
@@ -9715,6 +9734,7 @@ GameObject:
   - component: {fileID: 1390259262}
   - component: {fileID: 1390259261}
   - component: {fileID: 1390259263}
+  - component: {fileID: 1390259264}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -9885,6 +9905,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.6229134, y: 5.783436}
   m_EdgeRadius: 0
+--- !u!114 &1390259264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390259259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e5e0e42773d53439ffa23ead6dab38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
+  dialog: The bed's all ruined by all this red stuff...
+  dialogActive: 0
+  interactKey: 0
+  playerInRange: 0
 --- !u!1 &1421582563
 GameObject:
   m_ObjectHideFlags: 0
@@ -11810,6 +11848,7 @@ GameObject:
   - component: {fileID: 1713729533}
   - component: {fileID: 1713729534}
   - component: {fileID: 1713729535}
+  - component: {fileID: 1713729536}
   m_Layer: 0
   m_Name: InteractablePlant
   m_TagString: Untagged
@@ -11878,6 +11917,24 @@ MonoBehaviour:
         m_CallState: 2
   interactKey: 102
   isInRange: 0
+--- !u!114 &1713729536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713729532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e5e0e42773d53439ffa23ead6dab38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
+  dialog: The poor plant...
+  dialogActive: 0
+  interactKey: 0
+  playerInRange: 0
 --- !u!1 &1715038646
 GameObject:
   m_ObjectHideFlags: 0
@@ -13962,6 +14019,7 @@ GameObject:
   - component: {fileID: 1904003259}
   - component: {fileID: 1904003258}
   - component: {fileID: 1904003257}
+  - component: {fileID: 1904003260}
   m_Layer: 0
   m_Name: InteractableBox
   m_TagString: Untagged
@@ -14053,6 +14111,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9644787, y: 3.7446165}
   m_EdgeRadius: 0
+--- !u!114 &1904003260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904003255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e5e0e42773d53439ffa23ead6dab38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
+  dialog: That box is up so high...
+  dialogActive: 0
+  interactKey: 0
+  playerInRange: 0
 --- !u!1 &1926267322
 GameObject:
   m_ObjectHideFlags: 0
