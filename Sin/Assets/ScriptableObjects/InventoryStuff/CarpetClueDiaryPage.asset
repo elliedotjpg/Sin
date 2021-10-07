@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c50b24a65798db142b046507db0c08ab, type: 3}
-  m_Name: DiaryEntry1
+  m_Name: CarpetClueDiaryPage
   m_EditorClassIdentifier: 
-  itemDescription: Hi DiaRy MOTheR sed i shood tALK to u inSTED of HER. i ThiNk MOTHeR
-    iS SHy, SHe dOsenT LiKe iT wHeN i rUN To her or hUG her or KiSS her orSaY MommY
-    The peeopL aT The BiG PLace sAiD DaT GRoNe UPs dOnT Like Dose TINGs BUT ThaTS
-    OK! I have U DiaRY!!!
+  itemDescription: '"DiaRY MoTheR HiDED SUMTHinG IN The FLuFFY ToweL BUT I FOUnD
+    iT!!!!!"'
   itemName: Diary Page
-  itemImage: {fileID: 21300000, guid: d2e25a74c392dd94599c0f9aaba28171, type: 3}
-  numberHeld: 2
+  itemImage: {fileID: 21300000, guid: 5d50e483ed642934fa658fc6fa1a0588, type: 3}
+  numberHeld: 1
   usable: 0
   unique: 0
