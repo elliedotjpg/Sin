@@ -9,6 +9,8 @@ public class VentInteractable : MonoBehaviour
     [SerializeField] private InventoryItem thisItem;
     [SerializeField] private InventoryItem newItem;
 
+    //[SerializeField] private GameObject inventoryPanel;
+
     public KeyCode interactKey;
     public bool isInRange;
 
@@ -28,6 +30,8 @@ public class VentInteractable : MonoBehaviour
                 if (playerInventory.myInventory.Contains(thisItem))
                 {
                     AddNew(newItem);
+                    playerInventory.myInventory.Remove(thisItem);
+
                     SoundManagerScript.PlaySound("itemGet");
                     Debug.Log("New item added!");
                 }
