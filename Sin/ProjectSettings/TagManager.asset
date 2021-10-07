@@ -102,3 +102,6 @@ TagManager:
   - name: TSBlackFadeOut
     uniqueID: 332421083
     locked: 0
+  - name: NewVent
+    uniqueID: 3452047565
+    locked: 0
