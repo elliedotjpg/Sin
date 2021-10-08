@@ -40,8 +40,8 @@ public class OpenVentDialogue : MonoBehaviour
 
                 if (playerInventory.myInventory.Contains(thisItem) && playerInventory.myInventory.Contains(thisItem2))
                 {
-                    playerInventory.myInventory.Remove(removeItem);
-                    playerInventory.myInventory.Remove(removeItem2);
+                    //playerInventory.myInventory.Remove(removeItem);
+                    //playerInventory.myInventory.Remove(removeItem2);
                     
                     SoundManagerScript.PlaySound("itemGet");
                     playerInventory.myInventory.Add(addThisItem);
