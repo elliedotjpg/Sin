@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class VentInteractable : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class VentInteractable : MonoBehaviour
     [SerializeField] private InventoryItem thisItem;
     [SerializeField] private InventoryItem thisItem2;
     [SerializeField] private InventoryItem newItem;
+
 
     public KeyCode interactKey;
     public bool isInRange;
