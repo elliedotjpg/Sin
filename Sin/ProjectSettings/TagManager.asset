@@ -66,6 +66,9 @@ TagManager:
   - name: StartButton
     uniqueID: 4011490837
     locked: 0
+  - name: BG
+    uniqueID: 578996655
+    locked: 0
   - name: Player
     uniqueID: 3275410967
     locked: 0
@@ -83,6 +86,9 @@ TagManager:
     locked: 0
   - name: TRANSPARENT BLACK BEHIND OVERLAY
     uniqueID: 913189641
+    locked: 0
+  - name: Dialogues
+    uniqueID: 1541505421
     locked: 0
   - name: Overlay Window
     uniqueID: 1070730389
@@ -104,4 +110,13 @@ TagManager:
     locked: 0
   - name: NewVent
     uniqueID: 3452047565
+    locked: 0
+  - name: DimLightsRoom
+    uniqueID: 305625961
+    locked: 0
+  - name: CutsceneFade
+    uniqueID: 1960291749
+    locked: 0
+  - name: MotherVisual
+    uniqueID: 3255585289
     locked: 0
