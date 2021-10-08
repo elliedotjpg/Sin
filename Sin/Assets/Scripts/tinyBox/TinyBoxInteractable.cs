@@ -7,6 +7,7 @@ public class TinyBoxInteractable : MonoBehaviour
 {
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
+    [SerializeField] private InventoryItem thisItem2;
 
     public UnityEvent interactAction;
 
@@ -26,9 +27,10 @@ public class TinyBoxInteractable : MonoBehaviour
         {
             if (Input.GetKeyDown(interactKey))
             {
-                if (playerInventory.myInventory.Contains(thisItem))
+                if (playerInventory.myInventory.Contains(thisItem) && playerInventory.myInventory.Contains(thisItem2))
                 {
                     playerInventory.myInventory.Remove(thisItem);
+                    playerInventory.myInventory.Remove(thisItem2);
                     interactAction.Invoke();
                 }
             }

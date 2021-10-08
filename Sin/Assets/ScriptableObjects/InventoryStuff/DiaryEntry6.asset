@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c50b24a65798db142b046507db0c08ab, type: 3}
   m_Name: DiaryEntry6
   m_EditorClassIdentifier: 
-  itemDescription: '"Diary!!! I have a father!! I heard through the weird wall hole
-    that Father wants to take me home! I''m so excited, Diary!!! Me and Mother can
-    live together with Father!"'
-  itemName: Diary Entry 6
-  itemImage: {fileID: 21300000, guid: 025aa1224a2ec0447970cd5c7f7dd39f, type: 3}
+  itemDescription: '"Diary i havE a fathER !! i herd thRu the weerd waLL HoLe that
+    fathER wants to takeE me Home! I''m so eGGciTED DiaRY!!! me n motHER can LivE
+    toGEDDER WID fathER!!!!!"'
+  itemName: Diary Entry 7
+  itemImage: {fileID: 21300000, guid: 4369496626078314cb1ee67cc6be0a0c, type: 3}
   numberHeld: 0
   usable: 0
-  unique: 0
+  unique: 1

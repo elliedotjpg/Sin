@@ -11,6 +11,9 @@ public class OpenVentDialogue : MonoBehaviour
     [SerializeField] private InventoryItem notThisItem;
     [SerializeField] private InventoryItem notThisItem2;
 
+    [SerializeField] private InventoryItem removeItem;
+    [SerializeField] private InventoryItem removeItem2;
+
     [SerializeField] private InventoryItem addThisItem;
 
     public GameObject dialogBox;
@@ -37,16 +40,11 @@ public class OpenVentDialogue : MonoBehaviour
 
                 if (playerInventory.myInventory.Contains(thisItem) && playerInventory.myInventory.Contains(thisItem2))
                 {
-
-                    if (playerInventory.myInventory.Contains(addThisItem))
-                    {
-                        addThisItem.numberHeld += 1;
-                        SoundManagerScript.PlaySound("itemGet");
-                    }
-                    else
-                    {
-                        playerInventory.myInventory.Add(addThisItem);
-                    }
+                    playerInventory.myInventory.Remove(removeItem);
+                    playerInventory.myInventory.Remove(removeItem2);
+                    
+                    SoundManagerScript.PlaySound("itemGet");
+                    playerInventory.myInventory.Add(addThisItem);
                 }
                 else if (!playerInventory.myInventory.Contains(notThisItem) && !playerInventory.myInventory.Contains(notThisItem2))
                 {
