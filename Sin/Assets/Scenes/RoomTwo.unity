@@ -2273,9 +2273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e5e0e42773d53439ffa23ead6dab38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1187923566}
-  dialogText: {fileID: 1449719928}
-  dialog: A bed. From the looks of it, it's barely been touched.
+  dialogBox: {fileID: 311941527}
+  dialogText: {fileID: 325301377}
+  dialog: I'm not tired, but I feel like it's trying to pull me in.
   dialogActive: 0
   interactKey: 102
   playerInRange: 0
