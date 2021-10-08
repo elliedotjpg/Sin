@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c50b24a65798db142b046507db0c08ab, type: 3}
   m_Name: DiaryEntry7
   m_EditorClassIdentifier: 
-  itemDescription: '"diary! diary! you know, sometimes when i have nothing doing,
-    i hide under bed and imagine i''m in faraway place like in the books!!"'
+  itemDescription: '"diary! diary! you know, SOmetimes when i haVe nothing doing,
+    i hide under bed and imagine i am in faraWay place like in the bOOKS!!"'
   itemName: Diary Entry 7
   itemImage: {fileID: 21300000, guid: 2d0f1f6a8df590541a1f71d18101a311, type: 3}
   numberHeld: 0

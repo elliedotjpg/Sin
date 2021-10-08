@@ -8,11 +8,11 @@ public class OpenVentDialogue : MonoBehaviour
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
     [SerializeField] private InventoryItem thisItem2;
+    [SerializeField] private InventoryItem thisItem3;
+
     [SerializeField] private InventoryItem notThisItem;
     [SerializeField] private InventoryItem notThisItem2;
-
-    [SerializeField] private InventoryItem removeItem;
-    [SerializeField] private InventoryItem removeItem2;
+    [SerializeField] private InventoryItem notThisItem3;
 
     [SerializeField] private InventoryItem addThisItem;
 
@@ -38,15 +38,12 @@ public class OpenVentDialogue : MonoBehaviour
             if (Input.GetKeyDown(interactKey))
             {
 
-                if (playerInventory.myInventory.Contains(thisItem) && playerInventory.myInventory.Contains(thisItem2))
+                if (playerInventory.myInventory.Contains(thisItem) && playerInventory.myInventory.Contains(thisItem2) && playerInventory.myInventory.Contains(thisItem3))
                 {
-                    playerInventory.myInventory.Remove(removeItem);
-                    playerInventory.myInventory.Remove(removeItem2);
-                    
                     SoundManagerScript.PlaySound("itemGet");
                     playerInventory.myInventory.Add(addThisItem);
                 }
-                else if (!playerInventory.myInventory.Contains(notThisItem) && !playerInventory.myInventory.Contains(notThisItem2))
+                else if (!playerInventory.myInventory.Contains(notThisItem) && !playerInventory.myInventory.Contains(notThisItem2) && !playerInventory.myInventory.Contains(notThisItem3))
                 {
                     dialogBox.SetActive(true);
                 }
@@ -69,6 +66,7 @@ public class OpenVentDialogue : MonoBehaviour
         {
             playerInRange = false;
             dialogBox.SetActive(false);
+
             Debug.Log("Player left range!");
         }
     }

@@ -11,6 +11,8 @@ public class R2LockedDoorDialogue : MonoBehaviour
     [SerializeField] private InventoryItem thisItem2;
     [SerializeField] private InventoryItem notThisItem;
 
+    [SerializeField] private InventoryItem removeThisItem;
+
     [SerializeField] private InventoryItem addThisItem;
 
     public GameObject DoorAnim;
@@ -40,6 +42,8 @@ public class R2LockedDoorDialogue : MonoBehaviour
 
                 if (playerInventory.myInventory.Contains(thisItem))
                 {
+                    playerInventory.myInventory.Remove(removeThisItem);
+
                     DoorAnim.SetActive(true);
                     LockedDoor.SetActive(false);
                     StartCoroutine(Wait());
