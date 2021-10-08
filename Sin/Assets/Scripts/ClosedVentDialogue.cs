@@ -72,7 +72,7 @@ public class ClosedVentDialogue : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
-            Debug.Log("Player in range!");
+            Debug.Log("Player is in range with vent!");
         }
     }
 
@@ -82,7 +82,7 @@ public class ClosedVentDialogue : MonoBehaviour
         {
             playerInRange = false;
             dialogBox.SetActive(false);
-            Debug.Log("Player left range!");
+            Debug.Log("Player is no longer in range with vent!");
         }
     }
 }

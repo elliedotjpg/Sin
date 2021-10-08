@@ -652,10 +652,10 @@ MonoBehaviour:
   playerInventory: {fileID: 11400000, guid: a15a8ac0d8ca6d2469223aede1bcfcac, type: 2}
   thisItem: {fileID: 11400000, guid: 12e8253c08c74424783b1a5d1f7b6199, type: 2}
   thisItem2: {fileID: 11400000, guid: 1f0077ac636590f40a1bef0cd25fdd6f, type: 2}
-  notThisItem: {fileID: 11400000, guid: 382805bd128b9024bb422434aaa2345a, type: 2}
-  notThisItem2: {fileID: 11400000, guid: 64b755c87d21d244ebb1576f27f37f7a, type: 2}
-  removeItem: {fileID: 11400000, guid: 12e8253c08c74424783b1a5d1f7b6199, type: 2}
-  removeItem2: {fileID: 0}
+  thisItem3: {fileID: 0}
+  notThisItem: {fileID: 11400000, guid: 12e8253c08c74424783b1a5d1f7b6199, type: 2}
+  notThisItem2: {fileID: 11400000, guid: 1f0077ac636590f40a1bef0cd25fdd6f, type: 2}
+  notThisItem3: {fileID: 0}
   addThisItem: {fileID: 11400000, guid: 7ab242c3771969f4aac4bdbbcb841b6d, type: 2}
   dialogBox: {fileID: 0}
   dialogBox2: {fileID: 0}
@@ -6555,6 +6555,7 @@ MonoBehaviour:
   playerInventory: {fileID: 11400000, guid: a15a8ac0d8ca6d2469223aede1bcfcac, type: 2}
   thisItem: {fileID: 11400000, guid: 12e8253c08c74424783b1a5d1f7b6199, type: 2}
   thisItem2: {fileID: 11400000, guid: 1f0077ac636590f40a1bef0cd25fdd6f, type: 2}
+  thisItem3: {fileID: 0}
   notThisItem: {fileID: 11400000, guid: 12e8253c08c74424783b1a5d1f7b6199, type: 2}
   addThisItem: {fileID: 11400000, guid: 7ab242c3771969f4aac4bdbbcb841b6d, type: 2}
   ClosedVent: {fileID: 821269804}
@@ -6568,6 +6569,7 @@ MonoBehaviour:
   playerInRange: 0
   removeItem: {fileID: 11400000, guid: 12e8253c08c74424783b1a5d1f7b6199, type: 2}
   removeItem2: {fileID: 0}
+  removeItem3: {fileID: 0}
 --- !u!61 &821269807
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6581,7 +6583,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13016963, y: 0.24737728}
+  m_Offset: {x: 0.13016963, y: -3.8013372}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6592,7 +6594,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.318049, y: 6.086973}
+  m_Size: {x: 6.318049, y: 14.184402}
   m_EdgeRadius: 0
 --- !u!212 &821269808
 SpriteRenderer:
@@ -10572,10 +10574,10 @@ MonoBehaviour:
   playerInventory: {fileID: 11400000, guid: a15a8ac0d8ca6d2469223aede1bcfcac, type: 2}
   thisItem: {fileID: 11400000, guid: 1f0077ac636590f40a1bef0cd25fdd6f, type: 2}
   thisItem2: {fileID: 11400000, guid: 12e8253c08c74424783b1a5d1f7b6199, type: 2}
+  thisItem3: {fileID: 0}
   notThisItem: {fileID: 11400000, guid: 12e8253c08c74424783b1a5d1f7b6199, type: 2}
   notThisItem2: {fileID: 11400000, guid: 1f0077ac636590f40a1bef0cd25fdd6f, type: 2}
-  removeItem: {fileID: 11400000, guid: 12e8253c08c74424783b1a5d1f7b6199, type: 2}
-  removeItem2: {fileID: 0}
+  notThisItem3: {fileID: 0}
   addThisItem: {fileID: 11400000, guid: 7ab242c3771969f4aac4bdbbcb841b6d, type: 2}
   dialogBox: {fileID: 109662919}
   dialogBox2: {fileID: 0}
