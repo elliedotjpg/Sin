@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c50b24a65798db142b046507db0c08ab, type: 3}
   m_Name: DiaryEntry1
   m_EditorClassIdentifier: 
-  itemDescription: Hi DiaRy MOTheR sed i shood tALK to u inSTED of HER. i ThiNk MOTHeR
-    iS SHy, SHe dOsenT LiKe iT wHeN i rUN To her or hUG her or KiSS her orSaY MommY
-    The peeopL aT The BiG PLace sAiD DaT GRoNe UPs dOnT Like Dose TINGs BUT ThaTS
-    OK! I have U DiaRY!!!
+  itemDescription: '"Hi DiaRy MOTheR sed i shood tALK to u inSTED of HER. i ThiNk
+    MOTHeR iS SHy, SHe dOsenT LiKe iT wHeN i rUN To her or hUG her or KiSS her orSaY
+    MommY The peeopL aT The BiG PLace sAiD DaT GRoNe UPs dOnT Like Dose TINGs BUT
+    ThaTS OK! I have U DiaRY!!!"'
   itemName: Diary Page
   itemImage: {fileID: 21300000, guid: d2e25a74c392dd94599c0f9aaba28171, type: 3}
   numberHeld: 2

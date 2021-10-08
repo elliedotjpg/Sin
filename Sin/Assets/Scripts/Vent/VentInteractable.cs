@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class VentInteractable : MonoBehaviour
 {
-    //addToInventory add = new addToInventory(); 
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
+    [SerializeField] private InventoryItem thisItem2;
     [SerializeField] private InventoryItem newItem;
-
-    //[SerializeField] private GameObject inventoryPanel;
 
     public KeyCode interactKey;
     public bool isInRange;
@@ -17,7 +15,7 @@ public class VentInteractable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -27,7 +25,7 @@ public class VentInteractable : MonoBehaviour
         {
             if (Input.GetKeyDown(interactKey))
             {
-                if (playerInventory.myInventory.Contains(thisItem))
+                if (playerInventory.myInventory.Contains(thisItem) && playerInventory.myInventory.Contains(thisItem2))
                 {
                     AddNew(newItem);
                     playerInventory.myInventory.Remove(thisItem);
@@ -39,33 +37,34 @@ public class VentInteractable : MonoBehaviour
         }
     }
 
-    void AddNew(InventoryItem newItem)
-    {
-        if (playerInventory && newItem)
+        void AddNew(InventoryItem newItem)
         {
-            if (playerInventory.myInventory.Contains(newItem))
+            if (playerInventory && newItem)
             {
-                thisItem.numberHeld += 1;
-            }
-            else
-            {
-                playerInventory.myInventory.Add(newItem);
-                Debug.Log("Added new item!");
+                if (playerInventory.myInventory.Contains(newItem))
+                {
+                    thisItem.numberHeld += 1;
+                }
+                else
+                {
+                    playerInventory.myInventory.Add(newItem);
+                    Debug.Log("Added new item!");
+                }
             }
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            isInRange = true;
-            print("Player is in range with vent!");
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                isInRange = true;
+                print("Player is in range with vent!");
+            }
+        }
+
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            isInRange = false;
+            print("Player is no longer in range with vent!");
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        isInRange = false;
-        print("Player is no longer in range with vent!");
-    }
-}
