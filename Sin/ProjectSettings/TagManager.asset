@@ -66,6 +66,9 @@ TagManager:
   - name: StartButton
     uniqueID: 4011490837
     locked: 0
+  - name: BG
+    uniqueID: 578996655
+    locked: 0
   - name: Player
     uniqueID: 3275410967
     locked: 0
