@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ClosedVentDialogue : MonoBehaviour
+public class ClosedVentScript : MonoBehaviour
 {
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
     [SerializeField] private InventoryItem thisItem2;
-    [SerializeField] private InventoryItem thisItem3;
 
     [SerializeField] private InventoryItem notThisItem;
 
@@ -18,8 +17,7 @@ public class ClosedVentDialogue : MonoBehaviour
     public GameObject OpenVent;
 
     public GameObject dialogBox;
-    public GameObject dialogBox2;
-
+    //public GameObject dialogBox2;
     public Text dialogText;
     public string dialog;
     public bool dialogActive;
@@ -27,8 +25,6 @@ public class ClosedVentDialogue : MonoBehaviour
     public bool playerInRange;
 
     [SerializeField] private InventoryItem removeItem;
-    [SerializeField] private InventoryItem removeItem2;
-    [SerializeField] private InventoryItem removeItem3;
 
 
     void Start()
@@ -46,11 +42,10 @@ public class ClosedVentDialogue : MonoBehaviour
             if (Input.GetKeyDown(interactKey))
             {
 
-                if (playerInventory.myInventory.Contains(thisItem) && playerInventory.myInventory.Contains(thisItem2) && playerInventory.myInventory.Contains(thisItem3))
+                if (playerInventory.myInventory.Contains(thisItem) && playerInventory.myInventory.Contains(thisItem2))
                 {
                     playerInventory.myInventory.Remove(removeItem);
-                    playerInventory.myInventory.Remove(removeItem2); 
-                    playerInventory.myInventory.Remove(removeItem3);
+    
 
                     OpenVent.SetActive(true);
 
@@ -60,9 +55,9 @@ public class ClosedVentDialogue : MonoBehaviour
                     ClosedVent.SetActive(false);
                 }
 
-                else if(!playerInventory.myInventory.Contains(notThisItem))
+                else if (!playerInventory.myInventory.Contains(notThisItem))
                 {
-                        dialogBox.SetActive(true);
+                    dialogBox.SetActive(true);
                 }
             }
         }
