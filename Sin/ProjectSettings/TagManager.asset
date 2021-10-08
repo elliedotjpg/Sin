@@ -87,8 +87,11 @@ TagManager:
   - name: TRANSPARENT BLACK BEHIND OVERLAY
     uniqueID: 913189641
     locked: 0
-  - name: Dialogues
-    uniqueID: 1541505421
+  - name: PlainBlackBG
+    uniqueID: 3672924437
+    locked: 0
+  - name: DimLightsRoom
+    uniqueID: 305625961
     locked: 0
   - name: Overlay Window
     uniqueID: 1070730389
@@ -105,18 +108,15 @@ TagManager:
   - name: Item Overlay
     uniqueID: 1733439741
     locked: 0
-  - name: TSBlackFadeOut
-    uniqueID: 332421083
-    locked: 0
   - name: NewVent
     uniqueID: 3452047565
     locked: 0
-  - name: DimLightsRoom
-    uniqueID: 305625961
-    locked: 0
-  - name: CutsceneFade
-    uniqueID: 1960291749
+  - name: BlackFadeOut
+    uniqueID: 332421083
     locked: 0
   - name: MotherVisual
     uniqueID: 3255585289
+    locked: 0
+  - name: Dialogues
+    uniqueID: 1541505421
     locked: 0
