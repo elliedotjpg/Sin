@@ -52,7 +52,7 @@ public class PlayerMovementRoomThree : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(10);
         rb.MovePosition(rb.position + movement * MovementSpeed * Time.fixedDeltaTime);
     }
 
