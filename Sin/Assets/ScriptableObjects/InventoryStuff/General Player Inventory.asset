@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: General Player Inventory
   m_EditorClassIdentifier: 
   myInventory:
+<<<<<<< Updated upstream
   - {fileID: 11400000, guid: 1563b8901753c224f9dd160b2cce9332, type: 2}
   - {fileID: 11400000, guid: e58d34b6bac01c944a65562adb531567, type: 2}
   - {fileID: 11400000, guid: 60ef673878ce84045b294f6b951dbb58, type: 2}
   - {fileID: 11400000, guid: 1f0077ac636590f40a1bef0cd25fdd6f, type: 2}
+=======
+  - {fileID: 11400000, guid: ee758ef6e40717541aa911a8bf547b8b, type: 2}
+>>>>>>> Stashed changes
