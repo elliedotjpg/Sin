@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ClosedVentScript : MonoBehaviour
 {
+    public GameObject Panel;
+
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
     [SerializeField] private InventoryItem thisItem2;
@@ -48,8 +50,9 @@ public class ClosedVentScript : MonoBehaviour
     
 
                     OpenVent.SetActive(true);
-
                     SoundManagerScript.PlaySound("itemGet");
+
+                    Panel.SetActive(true);
                     playerInventory.myInventory.Add(addThisItem);
 
                     ClosedVent.SetActive(false);

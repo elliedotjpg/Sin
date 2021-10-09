@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c50b24a65798db142b046507db0c08ab, type: 3}
   m_Name: Rope
   m_EditorClassIdentifier: 
-  itemDescription: 
+  itemDescription: I think I can tie something together with this...
   itemName: Rope
   itemImage: {fileID: 21300000, guid: e2ba6758990da914aab11ee46bfdec59, type: 3}
   numberHeld: 0
   usable: 0
-  unique: 0
+  unique: 1

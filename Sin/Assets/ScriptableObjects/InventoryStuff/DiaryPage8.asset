@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c50b24a65798db142b046507db0c08ab, type: 3}
-  m_Name: DiaryEntry7
+  m_Name: DiaryPage8
   m_EditorClassIdentifier: 
-  itemDescription: '"diary! diary! you know, SOmetimes when i haVe nothing doing,
-    i hide under bed and imagine i am in faraWay place like in the bOOKS!!"'
-  itemName: Diary Entry 7
-  itemImage: {fileID: 21300000, guid: 2d0f1f6a8df590541a1f71d18101a311, type: 3}
+  itemDescription: '"Diary i havE a fathER !! i herd thRu the weerd waLL HoLe that
+    fathER wants to takeE me Home! I''m so eGGciTED DiaRY!!! me n motHER can LivE
+    toGEDDER WID fathER!!!!!"'
+  itemName: Diary Page 8
+  itemImage: {fileID: 21300000, guid: 4369496626078314cb1ee67cc6be0a0c, type: 3}
   numberHeld: 0
   usable: 0
   unique: 1

@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c50b24a65798db142b046507db0c08ab, type: 3}
-  m_Name: DiaryEntry9
+  m_Name: DiaryPage3
   m_EditorClassIdentifier: 
-  itemDescription: '"i feLL a LoT oF timES iNTo THE FLooR noW... iT IS scARy evEry
-    TiME..."'
-  itemName: Diary Entry 9
-  itemImage: {fileID: 21300000, guid: c1777d2910dc1564ab0df303d4a1db09, type: 3}
+  itemDescription: '"Hi DiaRy!!! TodEy mother was shining anD sHe smiLeD at me ToDEY!!
+    a TeeTh smiLe!!! She kisseD my hed n Red me a book in bed. i coodnt Sleep doe!
+    I was so EGGsited 2 tell u so i wayted 4 mother 2 wish me nite nite then kame
+    2 tell you!!!'
+  itemName: Diary Page 3
+  itemImage: {fileID: 21300000, guid: f022ed77d9614144e8fd7ba66d63b4ae, type: 3}
   numberHeld: 0
   usable: 0
   unique: 1
