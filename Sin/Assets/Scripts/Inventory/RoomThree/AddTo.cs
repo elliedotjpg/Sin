@@ -7,23 +7,19 @@ public class AddTo : MonoBehaviour
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
 
+    public GameObject Panel;
+
     public void OnClickObject()
     {
-        SoundManagerScript.PlaySound("itemGet");
         AddItem();
-        
-
         gameObject.SetActive(false);
-       
-
-        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SoundManagerScript.PlaySound("itemGet");
+            //SoundManagerScript.PlaySound("itemGet");
 
             AddItem();
             gameObject.SetActive(false);
@@ -32,6 +28,11 @@ public class AddTo : MonoBehaviour
 
     void AddItem()
     {
+        
+        SoundManagerScript.PlaySound("getItem");
+        Debug.Log("Play sound!");
+        Panel.SetActive(true);
+
         if (playerInventory && thisItem)
         {
             if (playerInventory.myInventory.Contains(thisItem))

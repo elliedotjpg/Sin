@@ -27,6 +27,8 @@ public class R2OpenVentDialogue : MonoBehaviour
     public KeyCode interactKey;
     public bool playerInRange;
 
+    public GameObject Panel;
+
 
     void Start()
     {
@@ -43,7 +45,9 @@ public class R2OpenVentDialogue : MonoBehaviour
 
                 if (playerInventory.myInventory.Contains(thisItem) && playerInventory.myInventory.Contains(thisItem2))
                 {
-                    SoundManagerScript.PlaySound("itemGet");
+                    SoundManagerScript.PlaySound("getItem");
+                    Panel.SetActive(true);
+
                     playerInventory.myInventory.Add(addThisItem);
                     playerInventory.myInventory.Remove(removeItem);
                     playerInventory.myInventory.Remove(removeItem2);

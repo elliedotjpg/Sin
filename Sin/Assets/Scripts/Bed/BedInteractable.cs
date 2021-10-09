@@ -8,7 +8,8 @@ public class BedInteractable : MonoBehaviour
     [SerializeField] private InventoryItem thisItem;
     [SerializeField] private InventoryItem newItem;
 
-    //[SerializeField] private GameObject inventoryPanel;
+
+    public GameObject Panel;
 
     public KeyCode interactKey;
     public bool isInRange;
@@ -28,10 +29,12 @@ public class BedInteractable : MonoBehaviour
             {
                 if (playerInventory.myInventory.Contains(thisItem))
                 {
+                    SoundManagerScript.PlaySound("getItem");
+                    Panel.SetActive(true);
+
                     AddNew(newItem);
                     playerInventory.myInventory.Remove(thisItem);
 
-                    SoundManagerScript.PlaySound("itemGet");
                     Debug.Log("New item added!");
                 }
             }

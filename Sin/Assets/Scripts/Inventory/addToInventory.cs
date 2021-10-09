@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,9 +12,8 @@ public class addToInventory : MonoBehaviour
 
     public void OnClickObject()
     {
-        Panel.SetActive(true);
         AddItem();
-        SoundManagerScript.PlaySound("itemGet");
+        
 
         gameObject.SetActive(false);
         Debug.Log("Added item!");
@@ -23,22 +23,24 @@ public class addToInventory : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Panel.SetActive(true);
-
             AddItem();
-            SoundManagerScript.PlaySound("itemGet");
+            //Panel.SetActive(true);
 
             gameObject.SetActive(false);
+            Debug.Log("Set false?");
         }
     }
 
     void AddItem()
     {
-        if(playerInventory && thisItem)
+        SoundManagerScript.PlaySound("getItem");
+        Panel.SetActive(true);
+
+        if (playerInventory && thisItem)
         {
-            if(playerInventory.myInventory.Contains(thisItem))
-            {
-                thisItem.numberHeld += 1;
+            if (playerInventory.myInventory.Contains(thisItem))
+            {            
+                thisItem.numberHeld += 1; 
             }
             else
             {

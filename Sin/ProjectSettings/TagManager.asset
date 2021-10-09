@@ -93,6 +93,9 @@ TagManager:
   - name: DimLightsRoom
     uniqueID: 305625961
     locked: 0
+  - name: InteractionDialogues
+    uniqueID: 833795441
+    locked: 0
   - name: Overlay Window
     uniqueID: 1070730389
     locked: 0

@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Hide : MonoBehaviour
 {
-    public float after = 5.0f;
-
-    IEnumerator Start()
+    void OnEnable()
     {
-        yield return new WaitForSeconds(after);
+        StartCoroutine(Wait());
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1);
         gameObject.SetActive(false);
     }
 }
