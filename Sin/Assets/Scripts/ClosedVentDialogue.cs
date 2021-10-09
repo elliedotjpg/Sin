@@ -27,8 +27,6 @@ public class ClosedVentDialogue : MonoBehaviour
     public bool playerInRange;
 
     [SerializeField] private InventoryItem removeItem;
-    [SerializeField] private InventoryItem removeItem2;
-    [SerializeField] private InventoryItem removeItem3;
 
 
     void Start()
@@ -46,11 +44,9 @@ public class ClosedVentDialogue : MonoBehaviour
             if (Input.GetKeyDown(interactKey))
             {
 
-                if (playerInventory.myInventory.Contains(thisItem) && playerInventory.myInventory.Contains(thisItem2) && playerInventory.myInventory.Contains(thisItem3))
+                if (playerInventory.myInventory.Contains(thisItem))
                 {
                     playerInventory.myInventory.Remove(removeItem);
-                    playerInventory.myInventory.Remove(removeItem2); 
-                    playerInventory.myInventory.Remove(removeItem3);
 
                     OpenVent.SetActive(true);
 

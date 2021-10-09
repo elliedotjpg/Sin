@@ -2,22 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class R2LockedDoorDialogue : MonoBehaviour
+public class R2OpenVentDialogue : MonoBehaviour
 {
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
     [SerializeField] private InventoryItem thisItem2;
-    [SerializeField] private InventoryItem notThisItem;
+    [SerializeField] private InventoryItem thisItem3;
 
-    [SerializeField] private InventoryItem removeThisItem;
+    [SerializeField] private InventoryItem notThisItem;
+    [SerializeField] private InventoryItem notThisItem2;
+    [SerializeField] private InventoryItem notThisItem3;
 
     [SerializeField] private InventoryItem addThisItem;
 
-    public GameObject DoorAnim;
-    public GameObject LockedDoor;
+    [SerializeField] private InventoryItem removeItem;
+    [SerializeField] private InventoryItem removeItem2;
+
     public GameObject dialogBox;
+    public GameObject dialogBox2;
     public Text dialogText;
     public string dialog;
     public bool dialogActive;
@@ -27,8 +30,6 @@ public class R2LockedDoorDialogue : MonoBehaviour
 
     void Start()
     {
-        LockedDoor.SetActive(true);
-        DoorAnim.SetActive(false);
         Update();
     }
 
@@ -40,14 +41,14 @@ public class R2LockedDoorDialogue : MonoBehaviour
             if (Input.GetKeyDown(interactKey))
             {
 
-                if (playerInventory.myInventory.Contains(thisItem))
+                if (playerInventory.myInventory.Contains(thisItem) && playerInventory.myInventory.Contains(thisItem2))
                 {
-                    playerInventory.myInventory.Remove(removeThisItem);
-
-                    DoorAnim.SetActive(true);
-                    LockedDoor.SetActive(false);
+                    SoundManagerScript.PlaySound("itemGet");
+                    playerInventory.myInventory.Add(addThisItem);
+                    playerInventory.myInventory.Remove(removeItem);
+                    playerInventory.myInventory.Remove(removeItem2);
                 }
-                else if (!playerInventory.myInventory.Contains(notThisItem))
+                else if (!playerInventory.myInventory.Contains(notThisItem) && !playerInventory.myInventory.Contains(notThisItem2))
                 {
                     dialogBox.SetActive(true);
                 }
@@ -70,8 +71,8 @@ public class R2LockedDoorDialogue : MonoBehaviour
         {
             playerInRange = false;
             dialogBox.SetActive(false);
+
             Debug.Log("Player left range!");
         }
     }
-
 }
