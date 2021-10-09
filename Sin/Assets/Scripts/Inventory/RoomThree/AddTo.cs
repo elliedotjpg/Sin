@@ -18,9 +18,7 @@ public class AddTo : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
-        {
-            //SoundManagerScript.PlaySound("itemGet");
-
+        { 
             AddItem();
             gameObject.SetActive(false);
         }
