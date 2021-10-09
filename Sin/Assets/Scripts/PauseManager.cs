@@ -35,6 +35,7 @@ public class PauseManager : MonoBehaviour
         {
             Time.timeScale = 0f;
         }
+
         else
         {
             Time.timeScale = 1f;
@@ -50,7 +51,7 @@ public class PauseManager : MonoBehaviour
         else
         {
             pausePanel.SetActive(false);
-        } 
+        }
     }
 
     /**public void ChangePause()
@@ -71,16 +72,21 @@ public class PauseManager : MonoBehaviour
 
     public void SwitchPanels()
     {
-      usingPausePanel = !usingPausePanel;
-      if(usingPausePanel)
-      {
-        pausePanel.SetActive(false);
-        inventoryPanel.SetActive(false);
-      }
-      else
-      {
-       inventoryPanel.SetActive(true);
-       pausePanel.SetActive(true);
-      }
+        usingPausePanel = !usingPausePanel;
+        if (usingPausePanel)
+        {
+            pausePanel.SetActive(false);
+            inventoryPanel.SetActive(false);
+        }
+        else
+        {
+            inventoryPanel.SetActive(true);
+            pausePanel.SetActive(true);
+        }
+    }
+
+    public void OnClickbacktoMain()
+    {
+        Time.timeScale = 1f;
     }
 }

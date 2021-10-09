@@ -7688,6 +7688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1737d7f63698abc44ac8b3b66329e8a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Panel: {fileID: 1987150021}
   playerInventory: {fileID: 11400000, guid: a15a8ac0d8ca6d2469223aede1bcfcac, type: 2}
   thisItem: {fileID: 11400000, guid: 12e8253c08c74424783b1a5d1f7b6199, type: 2}
   thisItem2: {fileID: 11400000, guid: 1f0077ac636590f40a1bef0cd25fdd6f, type: 2}
