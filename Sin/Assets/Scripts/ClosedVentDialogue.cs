@@ -51,7 +51,6 @@ public class ClosedVentDialogue : MonoBehaviour
                     OpenVent.SetActive(true);
 
                     SoundManagerScript.PlaySound("itemGet");
-                    playerInventory.myInventory.Add(addThisItem);
 
                     ClosedVent.SetActive(false);
                 }
