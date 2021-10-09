@@ -12,6 +12,11 @@ public class TSFadeIn : MonoBehaviour
         StartCoroutine(disableImage());
     }
 
+    private void OnEnable()
+    {
+        StartCoroutine(disableImage());
+    }
+
 
     private IEnumerator disableImage()
     {

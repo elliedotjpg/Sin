@@ -123,3 +123,6 @@ TagManager:
   - name: Dialogues
     uniqueID: 1541505421
     locked: 0
+  - name: Pause Canvas
+    uniqueID: 2930925137
+    locked: 0
