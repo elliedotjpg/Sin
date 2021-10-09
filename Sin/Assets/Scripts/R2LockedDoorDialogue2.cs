@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class R2LockedDoorDialogue : MonoBehaviour
+public class R2LockedDoorDialogue2 : MonoBehaviour
 {
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
@@ -46,6 +46,7 @@ public class R2LockedDoorDialogue : MonoBehaviour
 
                     DoorAnim.SetActive(true);
                     LockedDoor.SetActive(false);
+                    StartCoroutine(Wait());
                 }
                 else if (!playerInventory.myInventory.Contains(notThisItem))
                 {
@@ -72,6 +73,12 @@ public class R2LockedDoorDialogue : MonoBehaviour
             dialogBox.SetActive(false);
             Debug.Log("Player left range!");
         }
+    }
+
+    private IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(3);
     }
 
 }
