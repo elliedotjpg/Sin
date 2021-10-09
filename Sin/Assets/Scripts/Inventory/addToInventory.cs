@@ -7,11 +7,13 @@ public class addToInventory : MonoBehaviour
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
 
+    public GameObject Panel;
+
     public void OnClickObject()
     {
-        
+        Panel.SetActive(true);
         AddItem();
-        SoundManagerScript.PlaySound("itemGet");  
+        SoundManagerScript.PlaySound("itemGet");
 
         gameObject.SetActive(false);
         Debug.Log("Added item!");
@@ -21,9 +23,11 @@ public class addToInventory : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            Panel.SetActive(true);
+
+            AddItem();
             SoundManagerScript.PlaySound("itemGet");
 
-            AddItem(); 
             gameObject.SetActive(false);
         }
     }
