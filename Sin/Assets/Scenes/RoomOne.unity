@@ -1246,7 +1246,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12510347, y: 0.0022850037}
+  m_Offset: {x: 0.12510347, y: -0.09282088}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1257,7 +1257,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1312199, y: 2.0630279}
+  m_Size: {x: 1.1312199, y: 2.2532396}
   m_EdgeRadius: 0
 --- !u!114 &112038569
 MonoBehaviour:
@@ -2840,6 +2840,7 @@ GameObject:
   - component: {fileID: 314963792}
   - component: {fileID: 314963793}
   - component: {fileID: 314963794}
+  - component: {fileID: 314963795}
   m_Layer: 0
   m_Name: SideBookshelf (1)
   m_TagString: Untagged
@@ -2926,7 +2927,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.11038548, y: -0.08551484}
+  m_Offset: {x: 0.13680375, y: -0.16678643}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2937,7 +2938,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1606565, y: 2.1900306}
+  m_Size: {x: 1.10782, y: 2.3656409}
   m_EdgeRadius: 0
 --- !u!114 &314963794
 MonoBehaviour:
@@ -2957,6 +2958,32 @@ MonoBehaviour:
   dialogActive: 0
   interactKey: 102
   playerInRange: 0
+--- !u!61 &314963795
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314963790}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.054287314, y: -0.11379889}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.5, y: 2.5}
+    newSize: {x: 2.5, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1881802, y: 1.7376266}
+  m_EdgeRadius: 0
 --- !u!1 &329473267
 GameObject:
   m_ObjectHideFlags: 0
@@ -11094,7 +11121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 2089698461}
   dialogText: {fileID: 1042373275}
-  dialog: A bed. It seems as though it has barely been touched.
+  dialog: A bed. It looks soft and comfortable but it seems as though it has barely
+    been touched.
   dialogActive: 0
   interactKey: 102
   playerInRange: 0
@@ -12083,7 +12111,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.029944777, y: -0.2347827}
+  m_Offset: {x: -0.085464954, y: -0.21514332}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -12094,7 +12122,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.4851675, y: 7.0698023}
+  m_Size: {x: 6.5962076, y: 7.0305233}
   m_EdgeRadius: 0
 --- !u!114 &2071870696
 MonoBehaviour:
