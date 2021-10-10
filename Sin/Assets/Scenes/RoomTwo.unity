@@ -3008,7 +3008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1187923566}
   dialogText: {fileID: 1449719928}
-  dialog: A bed. From the looks of it, it's barely been touched.
+  dialog: A bed. It doesn't look too cozy though.
   dialogActive: 0
   interactKey: 102
   playerInRange: 0
@@ -5596,7 +5596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 311941527}
   dialogText: {fileID: 325301377}
-  dialog: There's so many books. I wonder who owns them?
+  dialog: The owner must really like books...
   dialogActive: 0
   interactKey: 102
   playerInRange: 0
@@ -15468,8 +15468,8 @@ MonoBehaviour:
   addThisItem: {fileID: 0}
   DoorAnim: {fileID: 1800935729}
   LockedDoor: {fileID: 806802239}
-  dialogBox: {fileID: 471800444}
-  dialogText: {fileID: 1404103561}
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
   dialog: 
   dialogActive: 0
   interactKey: 102
