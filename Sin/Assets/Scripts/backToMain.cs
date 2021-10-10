@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class backToMain : MonoBehaviour
 {
+
+    private int currentSceneIndex;
     public void OnClickbacktoMain()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("TitleScreen");
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        PlayerPrefs.SetInt("SavedScene", currentSceneIndex);
+        SceneManager.LoadScene(0);
     }
 
 }
