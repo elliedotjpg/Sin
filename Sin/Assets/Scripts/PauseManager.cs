@@ -26,6 +26,11 @@ public class PauseManager : MonoBehaviour
     {
         PauseMore();
         deactivateInventory();
+
+        if (Input.GetKeyDown(interactKey))
+        {
+            PauseMore();
+        }
     }
 
 

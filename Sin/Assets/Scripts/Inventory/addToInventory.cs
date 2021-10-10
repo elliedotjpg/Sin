@@ -21,16 +21,10 @@ public class addToInventory : MonoBehaviour
     {
         AddItem();
 
-        Destroy(gameObject);
-        Update();
-        //gameObject.SetActive(false);
+        gameObject.SetActive(false);
         Debug.Log("Added item!");
     }
 
-    private void Update()
-    {
-
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -38,17 +32,13 @@ public class addToInventory : MonoBehaviour
         {
             AddItem();
 
-            Destroy(gameObject);
-            Update();
-            //gameObject.SetActive(false);
+            gameObject.SetActive(false);
             Debug.Log("Set false?");
         }
     }
 
     void AddItem()
     {
-        //AudioSource.PlayClipAtPoint(clip, new Vector3(0, 0, 0));
-        //Debug.Log("PlayClipAtPoint!");
         SoundManagerScript.PlaySound("itemObtained");
         Panel.SetActive(true);
 
