@@ -2427,7 +2427,25 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -6295,7 +6313,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 19.433333333333334
+    m_Start: 9.58333333333334
     m_ClipIn: 0
     m_Asset: {fileID: -568245809067245634}
     m_Duration: 28.866666666666664
@@ -6360,8 +6378,8 @@ MonoBehaviour:
     m_Recordable: 0
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
-    m_PostExtrapolationTime: 17.091286398842925
-    m_PreExtrapolationTime: 19.433333333333334
+    m_PostExtrapolationTime: 26.94128639884292
+    m_PreExtrapolationTime: 9.58333333333334
     m_DisplayName: FadeFromBlack
   - m_Version: 1
     m_Start: 65.39128639884292
