@@ -10735,7 +10735,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Instructions
+  m_Text: Controls
 --- !u!222 &1194891990
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18180,7 +18180,7 @@ GameObject:
   - component: {fileID: 2045303450}
   - component: {fileID: 2045303449}
   m_Layer: 5
-  m_Name: Instructions
+  m_Name: Controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
