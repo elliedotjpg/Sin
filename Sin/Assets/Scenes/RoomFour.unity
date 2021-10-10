@@ -2621,6 +2621,8 @@ PlayableDirector:
     value: {fileID: 1390602049}
   - key: {fileID: 3416114793744134440, guid: 0aabcedd702939546b85abb9fe02b19f, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 3857676616120225332, guid: 0aabcedd702939546b85abb9fe02b19f, type: 2}
+    value: {fileID: 1911217912}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &292538133
@@ -4687,7 +4689,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mother smiles.
+  m_Text: Mother smiles as she watches the child's eyes slowly open.
 --- !u!222 &475221227
 CanvasRenderer:
   m_ObjectHideFlags: 0
