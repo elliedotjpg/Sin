@@ -105,11 +105,11 @@ TagManager:
   - name: ClickOutsideBook
     uniqueID: 3898051737
     locked: 0
-  - name: Inventory
-    uniqueID: 3755233339
-    locked: 0
   - name: Item Overlay
     uniqueID: 1733439741
+    locked: 0
+  - name: Inventory
+    uniqueID: 3755233339
     locked: 0
   - name: NewVent
     uniqueID: 3452047565
@@ -125,4 +125,7 @@ TagManager:
     locked: 0
   - name: Pause Canvas
     uniqueID: 2930925137
+    locked: 0
+  - name: More Overlay
+    uniqueID: 2624995133
     locked: 0
