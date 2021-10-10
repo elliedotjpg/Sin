@@ -29,7 +29,7 @@ public class BedInteractable : MonoBehaviour
             {
                 if (playerInventory.myInventory.Contains(thisItem))
                 {
-                    SoundManagerScript.PlaySound("getItem");
+                    SoundManagerScript.PlaySound("itemObtained");
                     Panel.SetActive(true);
 
                     AddNew(newItem);
