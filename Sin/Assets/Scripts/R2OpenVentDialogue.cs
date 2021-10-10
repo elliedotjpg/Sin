@@ -22,6 +22,7 @@ public class R2OpenVentDialogue : MonoBehaviour
     public GameObject dialogBox;
     public GameObject dialogBox2;
     public Text dialogText;
+    public Text dialogText2;
     public string dialog;
     public bool dialogActive;
     public KeyCode interactKey;
@@ -56,6 +57,16 @@ public class R2OpenVentDialogue : MonoBehaviour
                 {
                     dialogBox.SetActive(true);
                 }
+                else if (!playerInventory.myInventory.Contains(notThisItem) || !playerInventory.myInventory.Contains(notThisItem2))
+                {
+                    dialogBox.SetActive(true);
+                }
+                
+                if (playerInRange && !playerInventory.myInventory.Contains(notThisItem) && !playerInventory.myInventory.Contains(notThisItem2) && playerInventory.myInventory.Contains(addThisItem))
+                {
+                    dialogBox2.SetActive(true);
+                }
+
             }
         }
     }
@@ -75,6 +86,7 @@ public class R2OpenVentDialogue : MonoBehaviour
         {
             playerInRange = false;
             dialogBox.SetActive(false);
+            dialogBox2.SetActive(false);
 
             Debug.Log("Player left range!");
         }
