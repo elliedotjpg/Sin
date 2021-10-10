@@ -7,7 +7,9 @@ public class InteractWithCarpet : MonoBehaviour
 {
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
-    [SerializeField] private InventoryItem removeThisItem;
+    [SerializeField] private InventoryItem thisKey;
+
+    public GameObject Panel;
 
     public UnityEvent interactAction;
 
@@ -22,7 +24,7 @@ public class InteractWithCarpet : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void Update()
+    void Update()
     {
         if (isInRange)
         {
@@ -30,7 +32,6 @@ public class InteractWithCarpet : MonoBehaviour
             {
                 if (playerInventory.myInventory.Contains(thisItem))
                 {
-                    playerInventory.myInventory.Remove(thisItem);
                     interactAction.Invoke();
                 }
             }
