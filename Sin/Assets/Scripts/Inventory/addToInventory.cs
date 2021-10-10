@@ -5,18 +5,31 @@ using UnityEngine;
 
 public class addToInventory : MonoBehaviour
 {
+    //public static AudioClip clip;
+
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
 
     public GameObject Panel;
 
+    /* void Start()
+    {
+        clip = Resources.Load<AudioClip>("itemObtained");
+    }*/
+
     public void OnClickObject()
     {
         AddItem();
-        
 
-        gameObject.SetActive(false);
+        Destroy(gameObject);
+        Update();
+        //gameObject.SetActive(false);
         Debug.Log("Added item!");
+    }
+
+    private void Update()
+    {
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -24,16 +37,19 @@ public class addToInventory : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             AddItem();
-            //Panel.SetActive(true);
 
-            gameObject.SetActive(false);
+            Destroy(gameObject);
+            Update();
+            //gameObject.SetActive(false);
             Debug.Log("Set false?");
         }
     }
 
     void AddItem()
     {
-        SoundManagerScript.PlaySound("getItem");
+        //AudioSource.PlayClipAtPoint(clip, new Vector3(0, 0, 0));
+        //Debug.Log("PlayClipAtPoint!");
+        SoundManagerScript.PlaySound("itemObtained");
         Panel.SetActive(true);
 
         if (playerInventory && thisItem)

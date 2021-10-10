@@ -19,7 +19,7 @@ public class ClosedVentScript : MonoBehaviour
     public GameObject OpenVent;
 
     public GameObject dialogBox;
-    //public GameObject dialogBox2;
+    
     public Text dialogText;
     public string dialog;
     public bool dialogActive;
@@ -50,7 +50,7 @@ public class ClosedVentScript : MonoBehaviour
     
 
                     OpenVent.SetActive(true);
-                    SoundManagerScript.PlaySound("itemGet");
+                    SoundManagerScript.PlaySound("itemObtained");
 
                     Panel.SetActive(true);
                     playerInventory.myInventory.Add(addThisItem);

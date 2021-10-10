@@ -19,6 +19,8 @@ public class OpenVentDialogue : MonoBehaviour
     [SerializeField] private InventoryItem removeItem;
     [SerializeField] private InventoryItem removeItem2;
 
+    
+
     public GameObject dialogBox;
     public GameObject dialogBox2;
     public Text dialogText;

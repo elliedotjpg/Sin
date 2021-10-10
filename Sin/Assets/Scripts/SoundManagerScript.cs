@@ -11,7 +11,7 @@ public class SoundManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        objectGetSound = Resources.Load<AudioClip>("getItem");
+        objectGetSound = Resources.Load<AudioClip>("itemObtained");
 
         audioSource = gameObject.GetComponent<AudioSource>();
     }
@@ -25,7 +25,7 @@ public class SoundManagerScript : MonoBehaviour
     {
         switch (clip)
         {
-            case "getItem":
+            case "itemObtained":
                 audioSource.PlayOneShot(objectGetSound);
                 break;
         }
