@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c50b24a65798db142b046507db0c08ab, type: 3}
   m_Name: DiaryPage5
   m_EditorClassIdentifier: 
-  itemDescription: "\"Hi Diary!!! I have been reading dis book about festeevuLs a
-    Lot!! It Has so meni p\u0336e\u0336e\u0336p\u0336o\u0336l\u0336 people n prEtty
-    Lites!! and see Diary dey ware masks 2 the festeevuLs and dey Look suuper kewL!
-    im so eggsited 2 go 2 a festeevul wen Im oLDeR!!!\""
+  itemDescription: "\"Hi Diary!! i Have reaDinG DiS bOOk aboUT f\u0336e\u0336s\u0336T\u0336e\u0336e\u0336
+    fesTiVaLS a LoT!! iT Has SO Meni p\u0336e\u0336e\u0336p\u0336O\u0336L\u0336 peoPLe
+    n PreTTY LiTeS! and theY Ware Very cooL Faces. FeSTivaL FacES!! IIM SO eXCiTeD
+    2 GO 2 a feSTivAL Wen i aM  OLDer!!"
   itemName: Diary Page 5
-  itemImage: {fileID: 21300000, guid: 0dd479d445a87364cbd5f57550c091a7, type: 3}
+  itemImage: {fileID: 21300000, guid: 400416b3f0a9d844faacc247532d6bcc, type: 3}
   numberHeld: 0
   usable: 0
   unique: 1
