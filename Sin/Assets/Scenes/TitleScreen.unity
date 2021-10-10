@@ -2158,7 +2158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038530d9ccbe75a49bbfa7aa7201932e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeObject: {fileID: 0}
+  FadeObject: {fileID: 1997208767}
   FadeAudio: {fileID: 1363371411}
   playerInventory: {fileID: 11400000, guid: a15a8ac0d8ca6d2469223aede1bcfcac, type: 2}
   interactAction:
