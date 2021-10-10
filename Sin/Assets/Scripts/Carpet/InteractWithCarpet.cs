@@ -11,7 +11,6 @@ public class InteractWithCarpet : MonoBehaviour
 
     public UnityEvent interactAction;
 
-    //[SerializeField] private GameObject inventoryPanel;
 
     public KeyCode interactKey;
     public bool isInRange;

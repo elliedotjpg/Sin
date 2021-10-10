@@ -45,7 +45,7 @@ public class R2OpenVentDialogue : MonoBehaviour
 
                 if (playerInventory.myInventory.Contains(thisItem) && playerInventory.myInventory.Contains(thisItem2))
                 {
-                    SoundManagerScript.PlaySound("getItem");
+                    SoundManagerScript.PlaySound("itemObtained");
                     Panel.SetActive(true);
 
                     playerInventory.myInventory.Add(addThisItem);

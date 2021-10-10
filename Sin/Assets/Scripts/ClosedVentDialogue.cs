@@ -50,7 +50,7 @@ public class ClosedVentDialogue : MonoBehaviour
 
                     OpenVent.SetActive(true);
 
-                    SoundManagerScript.PlaySound("itemGet");
+                    SoundManagerScript.PlaySound("itemObtained");
 
                     ClosedVent.SetActive(false);
                 }
