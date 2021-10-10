@@ -15468,8 +15468,8 @@ MonoBehaviour:
   addThisItem: {fileID: 0}
   DoorAnim: {fileID: 1800935729}
   LockedDoor: {fileID: 806802239}
-  dialogBox: {fileID: 0}
-  dialogText: {fileID: 0}
+  dialogBox: {fileID: 471800444}
+  dialogText: {fileID: 1404103561}
   dialog: 
   dialogActive: 0
   interactKey: 102
