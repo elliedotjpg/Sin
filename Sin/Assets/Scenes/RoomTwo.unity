@@ -5534,6 +5534,7 @@ GameObject:
   - component: {fileID: 481278871}
   - component: {fileID: 481278870}
   - component: {fileID: 481278869}
+  - component: {fileID: 481278868}
   m_Layer: 0
   m_Name: SideBookshelf (1)
   m_TagString: Untagged
@@ -5555,6 +5556,32 @@ Transform:
   m_Father: {fileID: 407553529}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &481278868
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481278866}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.14125198, y: -0.14125225}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.5, y: 2.5}
+    newSize: {x: 2.5, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8049737, y: 2.2174954}
+  m_EdgeRadius: 0
 --- !u!114 &481278869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5586,7 +5613,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07191086, y: -0.28617755}
+  m_Offset: {x: 0.12929457, y: 0.31855834}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5597,7 +5624,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2376058, y: 2.0126548}
+  m_Size: {x: 1.1228384, y: 3.4516613}
   m_EdgeRadius: 0
 --- !u!212 &481278871
 SpriteRenderer:
@@ -16142,7 +16169,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12510347, y: -0.14718068}
+  m_Offset: {x: 0.12510347, y: 0.038212717}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16153,7 +16180,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1312199, y: 1.7640965}
+  m_Size: {x: 1.1312199, y: 2.1348834}
   m_EdgeRadius: 0
 --- !u!212 &1780222901
 SpriteRenderer:
