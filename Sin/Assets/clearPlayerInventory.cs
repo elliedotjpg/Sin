@@ -10,6 +10,11 @@ public class clearPlayerInventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+    }
+
+    public void Clear()
+    {
         playerInventory.myInventory.Clear();
     }
 }
