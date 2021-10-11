@@ -46,7 +46,7 @@ public class R2LockedDoorDialogue2 : MonoBehaviour
 
                     DoorAnim.SetActive(true);
                     LockedDoor.SetActive(false);
-                    StartCoroutine(Wait());
+                    SceneManager.LoadScene(3);
                 }
                 else if (!playerInventory.myInventory.Contains(notThisItem))
                 {
